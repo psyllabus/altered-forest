@@ -1,0 +1,6 @@
+{
+    "extends": "keystone",
+    "rules": {
+        "linebreak-style": "windows"
+    }
+}
