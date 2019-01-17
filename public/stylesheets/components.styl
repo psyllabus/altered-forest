@@ -1,0 +1,45 @@
+.framed-text
+    text-align: left
+    height: 300px
+    // overflow-y: auto
+
+    img
+        display: block
+        float: left
+        -webkit-shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%)
+        shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%)
+        height: 300px;
+        margin-right: 50px;
+
+    .text-container
+        // seems impossible to align vertically without screwing up the triangle shape :(
+        text-align: justify
+        margin-left: 175px
+        padding-top: 20px;
+
+        .text-content
+            padding: 0 10px;
+            border: 2px solid white;
+            background: #000040
+
+        p
+            font: 14px "Lucida Grande", Helvetica, Arial, sans-serif !important;
+
+@media PHONE_LANDSCAPE
+    .framed-text,
+    .framed-text img
+        height: 200px
+
+        .text-container
+            margin-left: 120px
+
+    .framed-text img
+        margin-right: 20px
+
+@media PHONE_PORTRAIT
+    .framed-text,
+    .framed-text img
+        height: 150px
+
+        .text-container
+            margin-left: 90px

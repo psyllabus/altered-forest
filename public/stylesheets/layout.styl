@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Neoterique';
+    src: url('fonts/Neoterique.ttf');
+}
+@font-face {
+    font-family: 'Neoterique Italic';
+    src: url('fonts/Neoterique Italic.ttf');
+}
+@font-face {
+    font-family: 'neo-latina-demo-ffp';
+    src: url('fonts/neo-latina-demo-ffp.ttf');
+}
+
+body
+    font: 14px "Neoterique", "Lucida Grande", Helvetica, Arial, sans-serif
+    color: #ffffff
+    background: #000080
+    margin: 0
+a
+    color: #00B7FF
+
+.header
+    .navbar
+        // position: relative
+        background-color: #000040
+
+        .right
+            text-align: right
+            display: inline-block
+            position: fixed
+            top: 0
+            right: 0
+
+        span
+            padding: 15px
+            display: inline-block
+
+.container
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../images/background.jpg')
+    background-size: cover;
+    height: calc(100vh - 74px - 47px)
+    padding-top: 40px
+    overflow-y: auto;
+
+.content
+    width: 1200px
+    margin: auto
+    margin-bottom: 90px
+
+.footer
+    text-align: center
+    padding: 20px 0
+    background-color: #000040
+    position: fixed
+    bottom: 0
+    width: 100%
+
+    .social
+        span
+            padding: 10px
+
+@media TABLET_LANDSCAPE
+    .content
+        max-width: 1200px
+
+@media TABLET_PORTRAIT
+    .content
+        max-width: 850px
+
+@media PHONE_LANDSCAPE
+    .content
+        max-width: calc(100% - 20px)
+
+
