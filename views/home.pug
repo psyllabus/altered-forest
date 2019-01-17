@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    .main-screen
+        .logo
+            img(src="https://via.placeholder.com/700x200?text=AF")
+        .event-details
+            h1.date#event-date
+            h1.location In the Forest
+            .countdown#countdown
+                span.component#days
+                    span.count 420
+                    span.unit Days
+                span.component#hours
+                    span.count 24
+                    span.unit Hours
+                span.component#minutes
+                    span.count 60
+                    span.unit Minutes
+                span.component#seconds
+                    span.count 60
+                    span.unit Seconds
+        .framed-text
+            img(src="/images/framed-pic-sample.png" alt="image")
+            .text-container
+                .text-content
+                    h2 Vision
+                    p We are committed to bringing quality underground music, mind altering psychedelic art, professionalism and outrageous laughter. Striving to create unique atmospheres at every event, we grow stronger and more dedicated with every session. Altered State, our monthly jam, has been going strong now for over 3 years now. This year Psyllabus has teamed up with scores of interesting local artists, musicians, spaces and squid to present to Canada the second iteration of Altered Forest. Canada's only adventure psytrance festival.
+                    //- p We are committed to bringing quality underground music, mind altering psychedelic art, professionalism and outrageous laughter. Striving to create unique atmospheres at every event, we grow stronger and more dedicated with every session. Altered State, our monthly jam, has been going strong now for over 3 years now. This year Psyllabus has teamed up with scores of interesting local artists, musicians, spaces and squid to present to Canada the second iteration of Altered Forest. Canada's only adventure psytrance festival.
+                    h5 -Pound the Ground
+
+block scripts
+    script(type="application/javascript" src="javascripts/custom/countdown.js")

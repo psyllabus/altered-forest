@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Neoterique';
+  src: url("fonts/Neoterique.ttf");
+}
+@font-face {
+  font-family: 'Neoterique Italic';
+  src: url("fonts/Neoterique Italic.ttf");
+}
+@font-face {
+  font-family: 'neo-latina-demo-ffp';
+  src: url("fonts/neo-latina-demo-ffp.ttf");
+}
+body {
+  font: 14px "Neoterique", "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #000080;
+  margin: 0;
+}
+a {
+  color: #00b7ff;
+}
+.header .navbar {
+  background-color: #000040;
+}
+.header .navbar .right {
+  text-align: right;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.header .navbar span {
+  padding: 15px;
+  display: inline-block;
+}
+.container {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background.jpg");
+  background-size: cover;
+  height: calc(100vh - 74px - 47px);
+  padding-top: 40px;
+  overflow-y: auto;
+}
+.content {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 90px;
+}
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000040;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer .social span {
+  padding: 10px;
+}
+@media TABLET_LANDSCAPE {
+  .content {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 1280px) {
+  .content {
+    max-width: 850px;
+  }
+}
+@media (max-width: 850px) {
+  .content {
+    max-width: calc(100% - 20px);
+  }
+}
+.main-screen {
+  text-align: center;
+}
+.main-screen .event-details .countdown span.component {
+  display: inline-block;
+  margin: 20px 5vw;
+}
+.main-screen .event-details .countdown span.component span.count {
+  display: block;
+}
+.framed-text {
+  text-align: left;
+  height: 300px;
+}
+.framed-text img {
+  display: block;
+  float: left;
+  -webkit-shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
+  shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
+  height: 300px;
+  margin-right: 50px;
+}
+.framed-text .text-container {
+  text-align: justify;
+  margin-left: 175px;
+  padding-top: 20px;
+}
+.framed-text .text-container .text-content {
+  padding: 0 10px;
+  border: 2px solid #fff;
+  background: #000040;
+}
+.framed-text .text-container p {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif !important;
+}
+@media (max-width: 850px) {
+  .framed-text,
+  .framed-text img {
+    height: 200px;
+  }
+  .framed-text .text-container,
+  .framed-text img .text-container {
+    margin-left: 120px;
+  }
+  .framed-text img {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .framed-text,
+  .framed-text img {
+    height: 150px;
+  }
+  .framed-text .text-container,
+  .framed-text img .text-container {
+    margin-left: 90px;
+  }
+}
