@@ -10,17 +10,25 @@
   font-family: 'neo-latina-demo-ffp';
   src: url("fonts/neo-latina-demo-ffp.ttf");
 }
-body {
+html {
   font: 14px "Neoterique", "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 1.3;
   color: #fff;
-  background: #000080;
+  margin: 0;
+}
+body {
   margin: 0;
 }
 a {
   color: #00b7ff;
 }
 .header .navbar {
-  background-color: #000040;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,64,0.5);
+  z-index: 100;
+  font-size: 130%;
 }
 .header .navbar .right {
   text-align: right;
@@ -30,15 +38,29 @@ a {
   right: 0;
 }
 .header .navbar span {
-  padding: 15px;
+  padding: 15px 25px;
   display: inline-block;
 }
 .container {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background.jpg");
   background-size: cover;
-  height: calc(100vh - 74px - 47px);
-  padding-top: 40px;
-  overflow-y: auto;
+  margin-top: 120px;
+  margin-bottom: 90px;
+}
+.background {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .content {
   width: 1200px;
@@ -48,31 +70,91 @@ a {
 .footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #000040;
-  position: fixed;
-  bottom: 0;
+  background-color: rgba(0,0,64,0.5);
   width: 100%;
 }
-.footer .social span {
-  padding: 10px;
+.footer .social a {
+  color: #fff;
 }
-@media TABLET_LANDSCAPE {
-  .content {
-    max-width: 1200px;
-  }
+.footer .social span {
+  padding: 0 10px;
+  margin: 0 5px;
+  font-size: 25px;
+}
+.scroll-hint {
+  font-size: 50px;
+  position: fixed;
+  bottom: 75px;
+  right: 75px;
+  height: 0;
+  opacity: 1;
+  text-align: right;
+  transition: opacity 0.5s linear;
+}
+.scroll-hint span {
+  opacity: 0;
+  animation-name: fading-light;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.scroll-hint.scrolled {
+  opacity: 0 !important;
 }
 @media (max-width: 1280px) {
   .content {
-    max-width: 850px;
+    max-width: calc(100% - 100px);
+  }
+  .header .navbar {
+    font-size: 100% !important;
+  }
+}
+@media (max-width: 1000px) {
+  .content {
+    max-width: calc(100% - 50px);
+  }
+  .header .navbar {
+    font-size: 100% !important;
+  }
+  .header .navbar span {
+    padding: 15px;
   }
 }
 @media (max-width: 850px) {
   .content {
-    max-width: calc(100% - 20px);
+    max-width: calc(100% - 50px);
+  }
+  .header .navbar {
+    font-size: 100% !important;
   }
 }
 .main-screen {
   text-align: center;
+}
+.main-screen .logo {
+  background-image: url("../images/title.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  height: calc(50vh - 120px);
+}
+.main-screen .event-details-container {
+  height: 50vh;
+  position: relative;
+}
+.main-screen .event-details {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.main-screen .event-details .date {
+  font-size: 300%;
+}
+.main-screen .event-details .countdown {
+  margin-top: 50px;
 }
 .main-screen .event-details .countdown span.component {
   display: inline-block;
@@ -80,6 +162,60 @@ a {
 }
 .main-screen .event-details .countdown span.component span.count {
   display: block;
+  font-size: 300%;
+  margin-bottom: 5px;
+}
+.main-screen .vision {
+  height: calc(55vh - 90px - 120px);
+}
+@media (max-width: 1280px) {
+  .main-screen .event-details .date {
+    font-size: 200%;
+  }
+  .main-screen .event-details .location {
+    font-size: 150%;
+  }
+}
+@media (max-width: 850px) {
+  .countdown {
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+  .countdown span.component {
+    margin: 20px 3vw !important;
+  }
+}
+@-moz-keyframes fading-light {
+  100% {
+    opacity: 0.6;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fading-light {
+  100% {
+    opacity: 0.6;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+@-o-keyframes fading-light {
+  100% {
+    opacity: 0.6;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes fading-light {
+  100% {
+    opacity: 0.6;
+  }
+  0% {
+    opacity: 0;
+  }
 }
 .framed-text {
   text-align: left;
@@ -101,31 +237,27 @@ a {
 .framed-text .text-container .text-content {
   padding: 0 10px;
   border: 2px solid #fff;
-  background: #000040;
+  background-color: rgba(0,0,64,0.8);
+  margin-bottom: 90px;
 }
 .framed-text .text-container p {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif !important;
+  font: 14px Verdana, Geneva, sans-serif;
+  line-height: 1.3;
 }
 @media (max-width: 850px) {
-  .framed-text,
   .framed-text img {
     height: 200px;
-  }
-  .framed-text .text-container,
-  .framed-text img .text-container {
-    margin-left: 120px;
-  }
-  .framed-text img {
     margin-right: 20px;
+  }
+  .framed-text .text-container {
+    margin-left: 120px;
   }
 }
 @media (max-width: 450px) {
-  .framed-text,
   .framed-text img {
     height: 150px;
   }
-  .framed-text .text-container,
-  .framed-text img .text-container {
+  .framed-text .text-container {
     margin-left: 90px;
   }
 }

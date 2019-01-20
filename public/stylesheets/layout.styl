@@ -11,18 +11,29 @@
     src: url('fonts/neo-latina-demo-ffp.ttf');
 }
 
-body
+
+html
+    // width: 100%;
+    // height: 100%;
     font: 14px "Neoterique", "Lucida Grande", Helvetica, Arial, sans-serif
+    line-height: 1.3
     color: #ffffff
-    background: #000080
     margin: 0
+
+body
+    margin: 0
+
 a
     color: #00B7FF
 
 .header
     .navbar
-        // position: relative
-        background-color: #000040
+        position: fixed
+        top: 0
+        width: 100%
+        background-color: rgba(0, 0, 64, 0.5)
+        z-index: 100
+        font-size: 130%
 
         .right
             text-align: right
@@ -30,17 +41,34 @@ a
             position: fixed
             top: 0
             right: 0
+            // font-size: 150%
 
         span
-            padding: 15px
+            padding: 15px 25px
             display: inline-block
 
 .container
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../images/background.jpg')
     background-size: cover;
-    height: calc(100vh - 74px - 47px)
-    padding-top: 40px
-    overflow-y: auto;
+    // height: calc(100vh - 74px - 47px)
+    margin-top: CONTENT_MARGIN_TOP
+    margin-bottom: FOOTER_HEIGHT
+    // overflow-y: auto;
+
+.background
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('../images/background.jpg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    background-color: transparent
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: -100
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
 .content
     width: 1200px
@@ -50,25 +78,59 @@ a
 .footer
     text-align: center
     padding: 20px 0
-    background-color: #000040
-    position: fixed
-    bottom: 0
+    background-color: rgba(0, 0, 64, 0.5)
     width: 100%
 
     .social
+        a
+            color: white
         span
-            padding: 10px
+            padding: 0 10px
+            margin: 0 5px
+            font-size: 25px
+
+.scroll-hint
+    font-size: 50px
+    position: fixed
+    bottom: 75px
+    right: 75px
+    height: 0
+    opacity: 1
+    text-align: right
+    transition: opacity 0.5s linear
+
+    span
+        opacity: 0
+        animation-name: fading-light
+        animation-delay: 2s
+        animation-duration: 5s
+        animation-direction: alternate
+        animation-iteration-count: infinite
+
+.scroll-hint.scrolled
+    opacity: 0 !important
 
 @media TABLET_LANDSCAPE
     .content
-        max-width: 1200px
+        max-width: calc(100% - 100px)
+    .header
+        .navbar
+            font-size: 100% !important
 
 @media TABLET_PORTRAIT
     .content
-        max-width: 850px
+        max-width: calc(100% - 50px)
+    .header
+        .navbar
+            font-size: 100% !important
+            span
+                padding: 15px
 
 @media PHONE_LANDSCAPE
     .content
-        max-width: calc(100% - 20px)
+        max-width: calc(100% - 50px)
+    .header
+        .navbar
+            font-size: 100% !important
 
 

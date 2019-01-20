@@ -1,5 +1,5 @@
 $(function () {
-    var DATE = new Date('2019-08-15T12:00:00')
+    var DATE = new Date('2019-08-16T12:00:00')
     var $countdown = $('#countdown');
     var $counts = {
         nbDays: $countdown.find('#days .count'),
@@ -34,8 +34,11 @@ $(function () {
     function updateCounters(prop) {
         var remaining = getRemainingTimeTo(DATE);
         var display = parseInt($counts[prop].text(), 10);
-        if (display > remaining[prop] || display === 0 && remaining[prop] !== 0) {
+        if (display > remaining[prop]) {
             $counts[prop].text(display - 1);
+        }
+        else if (display !== remaining[prop]) {
+            $counts[prop].text(remaining[prop]);
         }
         var diff = display - remaining[prop];
 
@@ -43,7 +46,7 @@ $(function () {
             setTimeout(function () { updateCounters(prop); }, 100);
         }
         else if (diff !== 0) {
-            setTimeout(function () { updateCounters(prop); }, 1000 / diff);
+            setTimeout(function () { updateCounters(prop); }, 500 / diff);
         }
         else {
             setTimeout(function () { updateCounters(prop); }, 1000);

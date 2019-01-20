@@ -1,12 +1,57 @@
 .main-screen
     text-align: center
+    .logo
+        background-image: url('../images/title.png')
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: contain
+        background-color: transparent
+        height: "calc(50vh - %s)" % CONTENT_MARGIN_TOP
+
+    .event-details-container
+        height: 50vh
+        position: relative
 
     .event-details
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 100%
+        .date
+            font-size: 300%
+
         .countdown
+            margin-top: 50px
             span.component
                 display: inline-block
                 margin: 20px 5vw
 
                 span.count
                     display: block
+                    font-size: 300%
+                    margin-bottom: 5px
 
+    .vision
+        height: "calc(55vh - %s - %s)" % (FOOTER_HEIGHT CONTENT_MARGIN_TOP)
+
+
+@keyframes fading-light
+    100%
+        opacity: 0.6
+    0%
+        opacity: 0
+
+@media TABLET_LANDSCAPE
+    .main-screen .event-details
+        .date
+            font-size: 200%
+        .location
+            font-size: 150%
+
+@media PHONE_LANDSCAPE
+    .countdown
+        margin-right: -25px
+        margin-left: -25px
+
+        span.component
+            margin: 20px 3vw !important

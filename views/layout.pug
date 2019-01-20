@@ -4,6 +4,7 @@ html
     title= title
     link(rel='stylesheet' href='/stylesheets/style.css')
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 
 
   body
@@ -17,14 +18,26 @@ html
           span.gallery Gallery
           span.infos Infos
           span.tickets Tickets
+    .background
     .container
       .content
         block content
 
     .footer
       .social
-        span.fab.fa-facebook
-        span.fab.fa-twitter
+        a(target="_blank" href="https://www.facebook.com/alteredforest")
+          span.fab.fa-facebook
+        a(target="_blank" href="https://twitter.com/alteredforest")
+          span.fab.fa-twitter
+        a(target="_blank" href="https://www.instagram.com/alteredforest/")
+          span.fab.fa-instagram
+        a(target="_blank" href="https://www.mixcloud.com/AlteredForest/")
+          span.fab.fa-mixcloud
+        a(target="_blank" href="https://soundcloud.com/alteredforest")
+          span.fab.fa-soundcloud
 
+    .scroll-hint
+        span.fas.fa-angle-down
   script(type="application/javascript" src="javascripts/jquery-3.3.1.slim.min.js")
+  script(type="application/javascript" src="javascripts/custom/layout.js")
   block scripts

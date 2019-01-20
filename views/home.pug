@@ -3,24 +3,25 @@ extends layout
 block content
     .main-screen
         .logo
-            img(src="https://via.placeholder.com/700x200?text=AF")
-        .event-details
-            h1.date#event-date
-            h1.location In the Forest
-            .countdown#countdown
-                span.component#days
-                    span.count 420
-                    span.unit Days
-                span.component#hours
-                    span.count 24
-                    span.unit Hours
-                span.component#minutes
-                    span.count 60
-                    span.unit Minutes
-                span.component#seconds
-                    span.count 60
-                    span.unit Seconds
-        .framed-text
+        .event-details-container
+            .event-details
+                h1.date#event-date
+                h1.location Duclos, Quebec, Canada
+                .countdown#countdown
+                    span.component#days
+                        span.count 420
+                        span.unit Days
+                    span.component#hours
+                        span.count 24
+                        span.unit Hours
+                    span.component#minutes
+                        span.count 60
+                        span.unit Minutes
+                    span.component#seconds
+                        span.count 60
+                        span.unit Seconds
+
+        .framed-text.vision
             img(src="/images/framed-pic-sample.png" alt="image")
             .text-container
                 .text-content

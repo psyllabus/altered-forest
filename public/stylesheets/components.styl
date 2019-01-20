@@ -20,26 +20,29 @@
         .text-content
             padding: 0 10px;
             border: 2px solid white;
-            background: #000040
+            background-color: rgba(0, 0, 64, 0.8)
+            margin-bottom: FOOTER_HEIGHT
 
         p
-            font: 14px "Lucida Grande", Helvetica, Arial, sans-serif !important;
+            font: 14px Verdana, Geneva, sans-serif
+            line-height: 1.3
 
 @media PHONE_LANDSCAPE
-    .framed-text,
-    .framed-text img
-        height: 200px
+    // .framed-text,
+    .framed-text
+        img
+            height: 200px
+            margin-right: 20px
 
         .text-container
             margin-left: 120px
 
-    .framed-text img
-        margin-right: 20px
 
 @media PHONE_PORTRAIT
-    .framed-text,
-    .framed-text img
-        height: 150px
+    // .framed-text,
+    .framed-text
+        img
+            height: 150px
 
         .text-container
             margin-left: 90px
