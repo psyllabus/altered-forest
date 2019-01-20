@@ -9,18 +9,58 @@ html
 
   body
     .header
-      .navbar
-        span.logo AF
+      nav.navbar
+        .logo.nav-item
+          .content
+            a.highlight(href="/") AF
         .right
-          span.performers Performers
-          span.news News
-          span.location Location
-          span.gallery Gallery
-          span.infos Infos
-          span.tickets Tickets
+          .nav-item.performers
+            .content
+              a.highlight(href='/performers') Performers
+            .dropdown
+              .content
+                a.highlight(href="/performers/audio") Audio Performers
+              .content
+                a.highlight(href="/performers/visual") Visual Performers
+              .content
+                a.highlight(href="/performers/tribe") The Tribe
+          .nav-item.news
+            .content
+              a.highlight(href="/news") News
+          .nav-item.location
+            .content
+              a.highlight(href="/location") Location
+          .nav-item.gallery
+            .content
+              a.highlight(href="/gallery") Gallery
+          .nav-item.infos
+            .content
+              a.highlight(href="/info") More info
+            .dropdown
+              .content
+                a.highlight(href="/info/tips") Tips
+              .content
+                a.highlight(href="/info/camping") Camping Rules
+              .content
+                a.highlight(href="/info/contact") Contact
+              .content
+                a.highlight(href="/info/applications") Applications
+          .nav-item.tickets
+            .content
+              a.highlight(href="/tickets") Tickets
+      nav.mobile-navbar
+        .logo.nav-item
+          .content
+            a.highlight(href="/") AF
+        .right
+          .nav-item
+            .content
+              .highlight
+                span.fas.fa-bars
+
     .background
     .container
-      .content
+      .main-content
         block content
 
     .footer

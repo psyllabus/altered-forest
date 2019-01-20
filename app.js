@@ -35,7 +35,12 @@ app.use(function(err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('error');
+    if (err.status === 404) {
+        res.render('construction');
+    }
+    else {
+        res.render('error');
+    }
 });
 
 module.exports = app;
