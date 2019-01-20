@@ -19,6 +19,9 @@
         width: 100%
         .date
             font-size: 300%
+        .date
+        .location
+            text-shadow: 0px 0px 50px #000, 1px 1px 20px #000, 2px 2px 10px #000
 
         .countdown
             margin-top: 50px
@@ -32,7 +35,7 @@
                     margin-bottom: 5px
 
     .vision
-        height: "calc(55vh - %s - %s)" % (FOOTER_HEIGHT CONTENT_MARGIN_TOP)
+        min-height: "calc(55vh - %s - %s)" % (FOOTER_HEIGHT CONTENT_MARGIN_TOP)
 
 
 @keyframes fading-light
