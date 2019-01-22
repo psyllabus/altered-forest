@@ -27,11 +27,11 @@
 
         .countdown
             margin-top: 50px
-            span.component
+            .component
                 display: inline-block
                 margin: 20px 5vw
 
-                span.count
+                .count
                     display: block
                     font-size: 300%
                     margin-bottom: 5px
@@ -60,3 +60,23 @@
 
         span.component
             margin: 20px 3vw !important
+
+@media PHONE_PORTRAIT
+    .main-screen
+        .logo
+            height: 40vh
+
+        .event-details-container
+            height: 50vh
+
+            .event-details
+                .date
+                    font-size: 200%
+                .location
+                    font-size: 150%
+
+                .countdown
+                    margin-top: 10px
+
+                    .component span.count
+                        font-size: 220%

@@ -1,0 +1,33 @@
+.header
+  nav.navbar
+    +navItem('logo', '/',  'AF')
+    .spacer
+    +dropdownNavItem('performers', '/performers', 'Performers', [
+      {link: '/performers/audio', text: 'Audio Performers'},
+      {link: '/performers/visual', text: 'Visual Performers'},
+      {link: '/performers/tribe', text: 'The Tribe'}
+    ])
+    +navItem('news', '/news',  'News')
+    +navItem('location', '/location',  'Locations')
+    +navItem('gallery', '/gallery',  'Gallery')
+    +dropdownNavItem('info', '/info', 'More Info', [
+      {link: '/info/tips', text: 'Tips'},
+      {link: '/info/camping', text: 'Camping Rules'},
+      {link: '/info/contact', text: 'Contact'},
+      {link: '/info/applications', text: 'Applications'}
+    ])
+    +navItem('tickets', '/tickets',  'Tickets')
+  nav.mobile-navbar
+    +navItem('logo', '/',  'AF')
+    .spacer
+    .nav-item
+      .content
+        a.highlight
+          span.fas.fa-bars
+      .dropdown
+        +navItem('performers', '/performers',  'Performers')
+        +navItem('news', '/news',  'News')
+        +navItem('location', '/location',  'Location')
+        +navItem('gallery', '/gallery',  'Gallery')
+        +navItem('info', '/info',  'More Info')
+        +navItem('tickets', '/tickets',  'Tickets')

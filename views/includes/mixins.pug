@@ -1,0 +1,19 @@
+mixin navItem(className, link, text)
+    .nav-item
+        .content
+            a.highlight(href=link)
+                if text
+                    = text
+                else if block
+                    block
+                else
+                    = 'Placeholder'
+
+mixin dropdownNavItem(className, link, text, dropdown)
+    .nav-item
+        .content
+            a.highlight(href=link)= text
+        .dropdown
+            each item in dropdown
+                .content
+                    a.highlight(href=item.link)= item.text
