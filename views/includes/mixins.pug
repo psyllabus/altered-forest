@@ -17,3 +17,10 @@ mixin dropdownNavItem(className, link, text, dropdown)
             each item in dropdown
                 .content
                     a.highlight(href=item.link)= item.text
+
+mixin framedContent(image, side)
+    .framed-text(class!=attributes.class + (side && side === 'right' ? ' right' : ' left'))
+        img(src=image alt="image")
+        .text-container
+            .text-content
+                block

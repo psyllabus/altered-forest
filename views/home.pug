@@ -21,15 +21,11 @@ block content
                         span.count 60
                         span.unit Seconds
 
-        .framed-text.vision
-            //- FIXME: why is the container div not expanding to its content?
-            img(src="/images/framed-pic-sample.png" alt="image")
-            .text-container
-                .text-content
-                    h2 Vision
-                    p We are committed to bringing quality underground music, mind altering psychedelic art, professionalism and outrageous laughter. Striving to create unique atmospheres at every event, we grow stronger and more dedicated with every session. Altered State, our monthly jam, has been going strong now for over 3 years now. This year Psyllabus has teamed up with scores of interesting local artists, musicians, spaces and squid to present to Canada the second iteration of Altered Forest. Canada's only adventure psytrance festival.
-                    //- p We are committed to bringing quality underground music, mind altering psychedelic art, professionalism and outrageous laughter. Striving to create unique atmospheres at every event, we grow stronger and more dedicated with every session. Altered State, our monthly jam, has been going strong now for over 3 years now. This year Psyllabus has teamed up with scores of interesting local artists, musicians, spaces and squid to present to Canada the second iteration of Altered Forest. Canada's only adventure psytrance festival.
-                    h5 -Pound the Ground
+        +framedContent("/images/framed-pic-sample.png")(class="vision")
+            h2 Vision
+            p We are committed to bringing quality underground music, mind altering psychedelic art, professionalism and outrageous laughter. Striving to create unique atmospheres at every event, we grow stronger and more dedicated with every session. Altered State, our monthly jam, has been going strong now for over 3 years now. This year Psyllabus has teamed up with scores of interesting local artists, musicians, spaces and squid to present to Canada the second iteration of Altered Forest. Canada's only adventure psytrance festival.
+            //- p We are committed to bringing quality underground music, mind altering psychedelic art, professionalism and outrageous laughter. Striving to create unique atmospheres at every event, we grow stronger and more dedicated with every session. Altered State, our monthly jam, has been going strong now for over 3 years now. This year Psyllabus has teamed up with scores of interesting local artists, musicians, spaces and squid to present to Canada the second iteration of Altered Forest. Canada's only adventure psytrance festival.
+            h5 -Pound the Ground
 
 block scripts
     script(type="application/javascript" src="javascripts/custom/countdown.js")

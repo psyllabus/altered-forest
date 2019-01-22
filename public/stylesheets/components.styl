@@ -1,20 +1,23 @@
 .framed-text
-    text-align: left
-    // height: 300px
-    // overflow-y: auto
+    // min-height: 300px
+    margin-bottom: 25px
 
     img
-        display: block
-        float: left
         -webkit-shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%)
         shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%)
         height: 300px;
+
+    &.left > img
+        float: left
         margin-right: 50px;
+
+    &.right > img
+        float: right
+        margin-left: 50px;
 
     .text-container
         // seems impossible to align vertically without screwing up the triangle shape :(
         // text-align: justify
-        margin-left: 175px
         padding-top: 20px;
 
         .text-content
@@ -25,35 +28,76 @@
             box-shadow: 5px 5px 20px black
 
         p
-            font: 14px Verdana, Geneva, sans-serif
-            line-height: 1.5
+            font: 14px "New Academy", Verdana, Geneva, sans-serif
+            line-height: 1.2
+            font-size: 120%
+
+    &.left
+        text-align: left
+        > .text-container
+            margin-left: 175px
+
+    &.right
+        text-align: right;
+
+        > .text-container
+            margin-right: 175px
+            // display: inline-block
 
 // hack to retain ability to scroll until all content is past the foooter
 // because that damn framed-text div isn't expanding to the size of the content the way it should... -_-''
 .framed-text:last-child
     .text-container
         .text-content
-            margin-bottom: 'calc(%s + 20px)' % FOOTER_HEIGHT
+            margin-bottom: 'calc(%s + %s)' % (FOOTER_HEIGHT FOOTER_HEIGHT)
 
-@media PHONE_LANDSCAPE
-    .framed-text
+@media TABLET_PORTRAIT
+    .framed-text.left
+    .framed-text.right
+        // min-height: 200px
+
         img
             height: 200px
             margin-right: 20px
 
+    .framed-text.left
         .text-container
             margin-left: 120px
+    .framed-text.right
+        .text-container
+            margin-right: 120px
+
+@media PHONE_LANDSCAPE
+    .framed-text.left
+    .framed-text.right
+        // min-height: 200px
+
+        img
+            height: 200px
+            margin-right: 20px
+
+    .framed-text.left
+        .text-container
+            margin-left: 120px
+    .framed-text.right
+        .text-container
+            margin-right: 120px
 
 
 @media PHONE_PORTRAIT
-    // .framed-text,
-    .framed-text
+    .framed-text.left
+    .framed-text.right
+        // min-height: inherit
+
         img
-            margin-left: -20px
-            height: auto
-            width: calc(100vw - 10px)
-            margin-bottom: 20px
-            shape-outside: none;
+            margin-left: -20px !important
+            margin-right: -20px !important
+            height: auto !important
+            width: calc(100vw - 10px) !important
+            margin-bottom: 20px !important
+            shape-outside: none !important
 
         .text-container
-            margin-left: 0
+            margin-left: 0 !important
+            margin-right: 0 !important
+            text-align: left !important

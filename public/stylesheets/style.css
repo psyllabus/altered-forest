@@ -1,16 +1,20 @@
 .framed-text {
-  text-align: left;
+  margin-bottom: 25px;
 }
 .framed-text img {
-  display: block;
-  float: left;
   -webkit-shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
   shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
   height: 300px;
+}
+.framed-text.left > img {
+  float: left;
   margin-right: 50px;
 }
+.framed-text.right > img {
+  float: right;
+  margin-left: 50px;
+}
 .framed-text .text-container {
-  margin-left: 175px;
   padding-top: 20px;
 }
 .framed-text .text-container .text-content {
@@ -21,31 +25,66 @@
   box-shadow: 5px 5px 20px #000;
 }
 .framed-text .text-container p {
-  font: 14px Verdana, Geneva, sans-serif;
-  line-height: 1.5;
+  font: 14px "New Academy", Verdana, Geneva, sans-serif;
+  line-height: 1.2;
+  font-size: 120%;
+}
+.framed-text.left {
+  text-align: left;
+}
+.framed-text.left > .text-container {
+  margin-left: 175px;
+}
+.framed-text.right {
+  text-align: right;
+}
+.framed-text.right > .text-container {
+  margin-right: 175px;
 }
 .framed-text:last-child .text-container .text-content {
-  margin-bottom: calc(67px + 20px);
+  margin-bottom: calc(67px + 67px);
 }
-@media (max-width: 850px) {
-  .framed-text img {
+@media (max-width: 1000px) {
+  .framed-text.left img,
+  .framed-text.right img {
     height: 200px;
     margin-right: 20px;
   }
-  .framed-text .text-container {
+  .framed-text.left .text-container {
     margin-left: 120px;
+  }
+  .framed-text.right .text-container {
+    margin-right: 120px;
+  }
+}
+@media (max-width: 850px) {
+  .framed-text.left img,
+  .framed-text.right img {
+    height: 200px;
+    margin-right: 20px;
+  }
+  .framed-text.left .text-container {
+    margin-left: 120px;
+  }
+  .framed-text.right .text-container {
+    margin-right: 120px;
   }
 }
 @media (max-width: 600px) {
-  .framed-text img {
-    margin-left: -20px;
-    height: auto;
-    width: calc(100vw - 10px);
-    margin-bottom: 20px;
-    shape-outside: none;
+  .framed-text.left img,
+  .framed-text.right img {
+    margin-left: -20px !important;
+    margin-right: -20px !important;
+    height: auto !important;
+    width: calc(100vw - 10px) !important;
+    margin-bottom: 20px !important;
+    shape-outside: none !important;
   }
-  .framed-text .text-container {
-    margin-left: 0;
+  .framed-text.left .text-container,
+  .framed-text.right .text-container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
   }
 }
 @font-face {
@@ -59,6 +98,10 @@
 @font-face {
   font-family: 'neo-latina-demo-ffp';
   src: url("fonts/neo-latina-demo-ffp.ttf");
+}
+@font-face {
+  font-family: 'New Academy';
+  src: url("fonts/NEWACADEMY.ttf");
 }
 html {
   font: 14px "Neoterique", "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -303,6 +346,7 @@ a {
   height: calc(50vh - 120px);
 }
 .main-screen .event-details-container {
+  z-index: -10;
   height: 50vh;
   position: relative;
 }

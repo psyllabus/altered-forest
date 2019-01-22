@@ -5,6 +5,10 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
     res.render('home', { title: 'Altered Forest' });
 });
+router.get('/performers', function (req, res, next) {
+    res.render('performers', { title: 'Performers' });
+});
+
 // router.get('/tickets', function (req, res, next) {
 //     res.render('tickets', { title: 'Altered Forest Tickets' });
 // });
