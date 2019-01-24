@@ -6,7 +6,9 @@ const routes = {
     '/performers': { view: 'performers/index', title: 'Performers' },
     '/performers/visual': { view: 'performers/visual', title: 'Visual Performers' },
     '/performers/audio': { view: 'performers/audio', title: 'Audio Performers' },
-    '/performers/the-tribe': { view: 'performers/tribe', title: 'The Tribe' }
+    '/performers/the-tribe': { view: 'performers/tribe', title: 'The Tribe' },
+    '/gallery': { view: 'gallery/index', title: 'Gallery' },
+    '/gallery/af2018-alex': { view: 'gallery/af2018-alex', title: 'Gallery' }
 }
 
 for (const route in routes) {

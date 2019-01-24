@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'Neoterique';
-  src: url("fonts/Neoterique.ttf");
+  src: url("/fonts/Neoterique.ttf");
 }
 @font-face {
   font-family: 'Neoterique Italic';
-  src: url("fonts/Neoterique Italic.ttf");
+  src: url("/fonts/Neoterique Italic.ttf");
 }
 @font-face {
   font-family: 'neo-latina-demo-ffp';
-  src: url("fonts/neo-latina-demo-ffp.ttf");
+  src: url("/fonts/neo-latina-demo-ffp.ttf");
 }
 @font-face {
   font-family: 'New Academy';
-  src: url("fonts/NEWACADEMY.ttf");
+  src: url("/fonts/NEWACADEMY.ttf");
 }
 html {
   font: 14px "Neoterique", "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -921,5 +921,131 @@ a.framed-text h2 {
 @media (max-width: 850px) {
   .performers .intro-container {
     height: 30vh;
+  }
+}
+.gallery .intro-container {
+  height: 20vh;
+  margin-bottom: 50px;
+}
+.gallery .intro-container .center {
+  width: 100%;
+}
+@media (max-width: 850px) {
+  .gallery .intro-container {
+    height: 30vh;
+  }
+}
+.gallery .intro-container {
+  height: 15vh;
+  margin-bottom: 50px;
+}
+.gallery .intro-container .center {
+  width: 100%;
+}
+.gallery .gallery-content .album {
+  margin-top: 25px;
+}
+.gallery .gallery-content > ul {
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+.gallery .gallery-content > ul > li {
+  margin-bottom: 15px;
+  width: calc(25% - 15px);
+  display: inline-block;
+  margin-right: 15px;
+  list-style: outside none none;
+}
+.gallery .gallery-content > ul > li a {
+  border: 3px solid #000;
+  border-radius: 3px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  line-height: 0;
+}
+.gallery .gallery-content > ul > li a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1.02, 1.02, 1.02);
+  transform: scale3d(1.02, 1.02, 1.02);
+  height: 100%;
+  width: 100%;
+}
+.gallery .gallery-content > ul > li a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.gallery .gallery-content > ul > li a:hover .gallery-content-poster {
+  background-color: rgba(0,0,0,0.5);
+}
+.gallery .gallery-content > ul > li a:hover .gallery-content-poster > img {
+  opacity: 1;
+}
+.gallery .gallery-content > ul > li a .gallery-content-poster {
+  background-color: rgba(0,0,0,0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.gallery .gallery-content > ul > li a .gallery-content-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.gallery .gallery-content .video .demo-gallery-poster img {
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.8;
+  width: 48px;
+}
+.gallery .gallery-content.dark > ul > li a {
+  border: 3px solid #04070a;
+}
+@media (max-width: 1280px) {
+  .gallery .intro-container {
+    height: 20vh;
+  }
+  .gallery .gallery-content ul.album li.picture {
+    width: calc(33% - 15px);
+  }
+}
+@media (max-width: 1000px) {
+  .gallery .intro-container {
+    height: 25vh;
+  }
+  .gallery .gallery-content ul.album li.picture {
+    width: calc(25% - 15px);
+  }
+}
+@media (max-width: 850px) {
+  .gallery .intro-container {
+    height: 30vh;
+  }
+  .gallery .gallery-content ul.album li.picture {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 600px) {
+  .gallery .intro-container {
+    height: 40vh;
+  }
+  .gallery .gallery-content ul.album li.picture {
+    width: calc(100% - 15px);
   }
 }

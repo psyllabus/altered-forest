@@ -1,0 +1,20 @@
+extends ../layout
+
+block styles
+    link(type="text/css" rel="stylesheet" href="/stylesheets/lightgallery.min.css")
+    link(type="text/css" rel="stylesheet" href="/stylesheets/lg-transitions.min.css")
+    link(type="text/css" rel="stylesheet" href="/stylesheets/lg-fb-comment-box.min.css")
+
+block content
+    .gallery
+        .intro-container.vertical-center
+            .center
+                block galleryTitle
+                block galleryDescription
+        .gallery-content
+            ul.album
+                block pictures
+block scripts
+    script(type="application/javascript" src="/javascripts/jquery.mousewheel.min.js")
+    script(type="application/javascript" src="/javascripts/lightgallery-all.min.js")
+    script(type="application/javascript" src="/javascripts/custom/gallery.js")

@@ -1,0 +1,33 @@
+extends ../layout
+
+
+block styles
+    style(type='text/css').
+        /* Assumes the page won't ever grow past the height of the screen */
+        .container {
+            margin-bottom: 60px
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+        }
+
+block content
+    .performers
+        .intro-container.vertical-center
+            .center
+                h1
+                    +translate('gallery.title')
+
+        +slidingFrames()
+            +framedContent("/images/framed-pic-sample-2.png", 'left', '/gallery/af2018-alex')(class="alex-gallery")
+                h2
+                    +translate('gallery.albums.af2018-alex.title')
+                p
+                    +translate('gallery.albums.af2018-alex.descriptionp1')
+                p
+                    +translate('gallery.albums.af2018-alex.descriptionp2')
+
+
+block scripts
+    script(type="application/javascript" src="/javascripts/custom/sliding-frames.js")

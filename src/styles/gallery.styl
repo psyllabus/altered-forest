@@ -1,0 +1,113 @@
+
+.gallery
+    .intro-container
+        height 15vh
+        margin-bottom 50px
+
+        .center
+            width 100%
+
+    .gallery-content .album
+        margin-top 25px
+
+    // taken from https://codepen.io/sachinchoolur/pen/QjLNMM
+    .gallery-content
+        & > ul
+            margin-bottom 0
+            padding-left 15px
+            & > li
+                margin-bottom 15px
+                width calc(25% - 15px)
+                display inline-block
+                margin-right 15px
+                list-style outside none none
+                a
+                    border 3px solid #000
+                    border-radius 3px
+                    display block
+                    overflow hidden
+                    position relative
+                    float left
+                    line-height 0
+
+                    & > img
+                        -webkit-transition -webkit-transform 0.15s ease 0s
+                        -moz-transition -moz-transform 0.15s ease 0s
+                        -o-transition -o-transform 0.15s ease 0s
+                        transition transform 0.15s ease 0s
+                        -webkit-transform scale3d(1.02, 1.02, 1.02)
+                        transform scale3d(1.02, 1.02, 1.02)
+                        height 100%
+                        width 100%
+
+                    &:hover
+                        & > img
+                            -webkit-transform scale3d(1.1, 1.1, 1.1)
+                            transform scale3d(1.1, 1.1, 1.1)
+                        .gallery-content-poster
+                            background-color rgba(0, 0, 0, 0.5)
+                            & > img
+                                opacity 1
+                    .gallery-content-poster
+                        background-color rgba(0, 0, 0, 0.1)
+                        bottom 0
+                        left 0
+                        position absolute
+                        right 0
+                        top 0
+                        -webkit-transition background-color 0.15s ease 0s
+                        -o-transition background-color 0.15s ease 0s
+                        transition background-color 0.15s ease 0s
+                        & > img
+                            left 50%
+                            margin-left -10px
+                            margin-top -10px
+                            opacity 0
+                            position absolute
+                            top 50%
+                            -webkit-transition opacity 0.3s ease 0s
+                            -o-transition opacity 0.3s ease 0s
+                            transition opacity 0.3s ease 0s
+
+        .video
+            .demo-gallery-poster
+                img
+                    height 48px
+                    margin-left -24px
+                    margin-top -24px
+                    opacity 0.8
+                    width 48px
+        &.dark
+            & > ul
+                & > li
+                    a
+                        border 3px solid #04070a
+
+
+@media TABLET_LANDSCAPE
+    .gallery
+        .intro-container
+            height 20vh
+        .gallery-content ul.album li.picture
+            width calc(33% - 15px)
+
+@media TABLET_PORTRAIT
+    .gallery
+        .intro-container
+            height 25vh
+        .gallery-content ul.album li.picture
+            width calc(25% - 15px)
+
+@media PHONE_LANDSCAPE
+    .gallery
+        .intro-container
+            height 30vh
+        .gallery-content ul.album li.picture
+            width calc(50% - 15px)
+
+@media PHONE_PORTRAIT
+    .gallery
+        .intro-container
+            height 40vh
+        .gallery-content ul.album li.picture
+            width calc(100% - 15px)

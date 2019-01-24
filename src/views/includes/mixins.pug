@@ -61,3 +61,13 @@ mixin facebook(text, link)
         a(href=link target="_blank")
             i.fab.fa-facebook
             | Facebook
+
+mixin picture(link, title, comment)
+    - var subcontent = ''
+    - if (title) { subcontent = '<h4>' + title + '</h4>'; }
+    - if (comment) { subcontent = (subcontent || '') + '<p>' + comment + '</p>'; }
+    li.picture(data-src=link data-sub-html=subcontent)
+        a
+            img.img-responsive(src=link)
+            div.gallery-content-poster
+                img(src="/images/zoom.png")
