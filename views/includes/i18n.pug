@@ -1,0 +1,32 @@
+-
+    locals.translations = {
+        performers: {
+            title: { en: 'Performers' },
+            description: { en: 'Get to know the team working together to alter y\'all!!' },
+            audio: {
+                title: { en: 'Audio Performers' },
+                description: { en: 'A team of dedicated musicians and sound wizards who brewed their best tracks to tickle both your ears and your brain!' }
+            },
+            visual: {
+                title: { en: 'Visual Performers' },
+                description: { en: 'A team of inspired artists to sprinkle magic all around the stomping ground to bring about some truly out-of-this world experience, right there, for you!' }
+            },
+            tribe: {
+                title: { en: 'The Tribe' },
+                description: { en: 'None of this would be possible without the dedication of the Altered Tribe who has been hard at work for the past several years to bring together this experience' }
+            }
+        },
+        'pound.the.ground': { en: '- Pound the Ground'}
+    };
+
+mixin translate(key)
+    - var keys = key.split('.');
+    - var translation = locals.translations
+    - if (translation[key] && translation[key].en) { translation = translation[key]; }
+    - else {
+    -     for (var k = 0; k < keys.length; k++) {
+    -         if (!translation[keys[k]]) { translation = { en: 'No translation for key: ' + key}; }
+    -         else { translation = translation[keys[k]]; }
+    -     }
+    - }
+    | #{translation.en}

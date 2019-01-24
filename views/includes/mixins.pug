@@ -18,9 +18,46 @@ mixin dropdownNavItem(className, link, text, dropdown)
                 .content
                     a.highlight(href=item.link)= item.text
 
-mixin framedContent(image, side)
-    .framed-text(class!=attributes.class + (side && side === 'right' ? ' right' : ' left'))
-        img(src=image alt="image")
-        .text-container
-            .text-content
+mixin _framedContent(image)
+    img.framed-image(src=image alt="image")
+    img.spacer
+    .text-container
+        .text-content
+            block
+
+mixin framedContent(image, side, link)
+    if link
+        a.framed-text(href=link class!=(attributes.class || '') + (side && side === 'right' ? ' right' : ' left'))
+            +_framedContent(image, side)
                 block
+    else
+        .framed-text(class!=(attributes.class || '') + (side && side === 'right' ? ' right' : ' left'))
+            +_framedContent(image, side)
+                block
+
+mixin slidingFrames(position)
+    .sliding-frames(class=((attributes.class || '') + position ? ' translate-' + (position - 1) : ''))
+        span.previous.hidden
+            i.fas.fa-caret-left
+        span.next.hidden
+            i.fas.fa-caret-right
+
+        block
+
+mixin soundcloud(text, link)
+    div.social.font-text
+        a(href=link target="_blank")
+            i.fab.fa-soundcloud
+            | SoundCloud
+
+mixin mixcloud(text, link)
+    div.social.font-text
+        a(href=link target="_blank")
+            i.fab.fa-mixcloud
+            | MixCloud
+
+mixin facebook(text, link)
+    div.social.font-text
+        a(href=link target="_blank")
+            i.fab.fa-facebook
+            | Facebook

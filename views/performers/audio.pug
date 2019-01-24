@@ -1,0 +1,44 @@
+extends ../layout
+
+block styles
+    style(type='text/css').
+        /* Assumes the page won't ever grow past the height of the screen */
+        .container {
+            margin-bottom: 60px
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+        }
+
+block content
+    .performers
+        .intro-container.vertical-center
+            .intro.center
+                h1
+                    +translate('performers.audio.title')
+                h3
+                    +translate('performers.audio.description')
+
+        +slidingFrames(2)(class="performers")
+            +framedContent("/images/framed-pic-sample.png", 'left')
+                h2 A guy
+                p That guy knows how to throw a mix! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus reiciendis temporibus commodi maiores amet rem minus! Quis nostrum eius sequi non. Atque, nam. Fugiat, est saepe aut harum quos temporibus?
+                h3 Links
+                .socials
+                    +soundcloud('http://soundcloud.com')
+                    +mixcloud('http://soundcloud.com')
+                    +facebook('http://soundcloud.com')
+
+            +framedContent("/images/framed-pic-sample.png", 'right')
+                h2 Another guy
+                p That guy knows how to throw a mix, too!
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus reiciendis temporibus commodi maiores amet rem minus! Quis nostrum eius sequi non. Atque, nam. Fugiat, est saepe aut harum quos temporibus?
+                h3 Links
+                .socials
+                    +soundcloud('http://soundcloud.com')
+                    +mixcloud('http://soundcloud.com')
+                    +facebook('http://soundcloud.com')
+
+block scripts
+    script(type="application/javascript" src="/javascripts/custom/sliding-frames.js")
