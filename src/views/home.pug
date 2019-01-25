@@ -10,22 +10,22 @@ block content
                 .countdown#countdown
                     span.component#days
                         span.count 420
-                        span.unit Days
+                        span.unit= translate('home.days')
                     span.component#hours
                         span.count 24
-                        span.unit Hours
+                        span.unit= translate('home.hours')
                     span.component#minutes
                         span.count 60
-                        span.unit Minutes
+                        span.unit= translate('home.minutes')
                     span.component#seconds
                         span.count 60
-                        span.unit Seconds
+                        span.unit= translate('home.seconds')
 
         +framedContent("/images/framed-pic-sample.png")(class="vision")
-            h2 Vision
-            p We are committed to bringing quality underground music, mind altering psychedelic art, professionalism and outrageous laughter. Striving to create unique atmospheres at every event, we grow stronger and more dedicated with every session. Altered State, our monthly jam, has been going strong now for over 3 years now. This year Psyllabus has teamed up with scores of interesting local artists, musicians, spaces and squid to present to Canada the second iteration of Altered Forest. Canada's only adventure psytrance festival.
-            //- p We are committed to bringing quality underground music, mind altering psychedelic art, professionalism and outrageous laughter. Striving to create unique atmospheres at every event, we grow stronger and more dedicated with every session. Altered State, our monthly jam, has been going strong now for over 3 years now. This year Psyllabus has teamed up with scores of interesting local artists, musicians, spaces and squid to present to Canada the second iteration of Altered Forest. Canada's only adventure psytrance festival.
-            h5 -Pound the Ground
+            h2= translate('home.vision.title')
+            p= translate('home.vision.description')
+            h5= translate('pound.the.ground')
 
+        +scrollHint()
 block scripts
     script(type="application/javascript" src="javascripts/custom/countdown.js")

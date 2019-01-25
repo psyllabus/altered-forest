@@ -2,21 +2,25 @@
   nav.navbar
     +navItem('logo', '/',  'AF')
     .spacer
-    +dropdownNavItem('performers', '/performers', 'Performers', [
-      {link: '/performers/audio', text: 'Audio Performers'},
-      {link: '/performers/visual', text: 'Visual Performers'},
-      {link: '/performers/the-tribe', text: 'The Tribe'}
+    +dropdownNavItem('performers', '/performers', translate('nav.performers.title'), [
+      {link: '/performers/audio', text: translate('nav.performers.audio')},
+      {link: '/performers/visual', text: translate('nav.performers.visual')},
+      {link: '/performers/the-tribe', text: translate('nav.performers.tribe')}
     ])
-    +navItem('news', '/news',  'News')
-    +navItem('location', '/location',  'Locations')
-    +navItem('gallery', '/gallery',  'Gallery')
-    +dropdownNavItem('info', '/info', 'More Info', [
-      {link: '/info/tips', text: 'Tips'},
-      {link: '/info/camping', text: 'Camping Rules'},
-      {link: '/info/contact', text: 'Contact'},
-      {link: '/info/applications', text: 'Applications'}
+    +navItem('news', '/news',  translate('nav.news'))
+    +navItem('location', '/location',  translate('nav.location'))
+    +navItem('gallery', '/gallery',  translate('nav.gallery'))
+    +dropdownNavItem('info', '/info', translate('nav.info.title'), [
+      {link: '/info/tips', text: translate('nav.info.tips')},
+      {link: '/info/camping', text: translate('nav.info.camping')},
+      {link: '/info/contact', text: translate('nav.info.contact')},
+      {link: '/info/applications', text: translate('nav.info.applications')}
     ])
-    +navItem('tickets', '/tickets',  'Tickets')
+    +navItem('tickets', '/tickets',  translate('nav.tickets'))
+    if lang == 'fr'
+      +navItem('english', '/lang/en?url=' + url,  'English')
+    else
+      +navItem('francais', '/lang/fr?url=' + url,  'Francais')
   nav.mobile-navbar
     +navItem('logo', '/',  'AF')
     .spacer
@@ -25,9 +29,14 @@
         a.highlight
           span.fas.fa-bars
       .dropdown
-        +navItem('performers', '/performers',  'Performers')
-        +navItem('news', '/news',  'News')
-        +navItem('location', '/location',  'Location')
-        +navItem('gallery', '/gallery',  'Gallery')
-        +navItem('info', '/info',  'More Info')
-        +navItem('tickets', '/tickets',  'Tickets')
+        +navItem('performers', '/performers',  translate('nav.performers.title'))
+        +navItem('news', '/news',  translate('nav.news'))
+        +navItem('location', '/location',  translate('nav.location'))
+        +navItem('gallery', '/gallery',  translate('nav.gallery'))
+        +navItem('info', '/info',  translate('nav.info.title'))
+        +navItem('tickets', '/tickets',  translate('nav.tickets'))
+        if lang == 'fr'
+          +navItem('english', '/lang/en?url=' + url,  'English')
+        else
+          +navItem('francais', '/lang/fr?url=' + url,  'Francais')
+

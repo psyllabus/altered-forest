@@ -31,8 +31,9 @@ html
         a(target="_blank" href="https://soundcloud.com/alteredforest")
           span.fab.fa-soundcloud
 
-    .scroll-hint
-        span.fas.fa-angle-down
   script(type="application/javascript" src="/javascripts/jquery-3.3.1.slim.min.js")
   script(type="application/javascript" src="/javascripts/custom/layout.js")
+  script.
+    window.initData = {};
+    window.initData.lang = "#{lang}";
   block scripts

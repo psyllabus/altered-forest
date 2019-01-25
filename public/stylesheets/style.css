@@ -232,15 +232,19 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
-@media (max-width: 1280px) {
+@media (max-width: 1320px) {
   .main-content {
     max-width: calc(100% - 200px);
   }
   .header .navbar {
-    font-size: 130% !important;
+    font-size: 125% !important;
+  }
+  .header .navbar .highlight {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .main-content {
     max-width: calc(100% - 100px);
   }
@@ -248,17 +252,18 @@ p {
     font-size: 110% !important;
   }
   .header .navbar .highlight {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+    letter-spacing: 0.5px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
   }
 }
 @media (max-width: 850px) {
   .header .navbar {
-    font-size: 100% !important;
+    font-size: 90% !important;
   }
   .header .navbar .highlight {
-    padding-right: 10px !important;
-    padding-left: 10px !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
   }
 }
 @media (max-width: 600px) {
@@ -270,7 +275,7 @@ p {
   }
   .mobile-navbar {
     display: flex !important;
-    font-size: 100% !important;
+    font-size: 130% !important;
   }
   .container {
     margin-top: 60px;
@@ -426,6 +431,7 @@ a.framed-text h2 {
   white-space: nowrap;
   margin: 0 -30vw;
   position: relative;
+  opacity: 0.99;
 }
 .sliding-frames > .previous {
   font-size: 100px;
@@ -434,12 +440,12 @@ a.framed-text h2 {
   opacity: 0.5;
   transition: opacity 500ms ease-in-out;
   top: -150px;
-  z-index: 100;
+  z-index: 1;
   animation-name: fading-light-on;
   animation-duration: 5s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  left: calc(20vw + 25px);
+  left: calc(30vw + 25px);
   padding: 200px 400px 200px 100px;
   margin-left: -100px;
 }
@@ -453,12 +459,12 @@ a.framed-text h2 {
   opacity: 0.5;
   transition: opacity 500ms ease-in-out;
   top: -150px;
-  z-index: 100;
+  z-index: 1;
   animation-name: fading-light-on;
   animation-duration: 5s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  right: calc(20vw + 25px);
+  right: calc(30vw + 25px);
   padding: 200px 100px 200px 400px;
   margin-right: -100px;
 }
@@ -472,7 +478,7 @@ a.framed-text h2 {
   transition: transform 300ms ease-out;
   transform: translateX(0);
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .framed-text.left img,
   .framed-text.right img {
     height: 200px;
@@ -527,6 +533,12 @@ a.framed-text h2 {
   .framed-text.left .spacer,
   .framed-text.right .spacer {
     display: none;
+  }
+  .sliding-frames > .previous {
+    padding-right: 10vw;
+  }
+  .sliding-frames > .next {
+    padding-left: 10vw;
   }
 }
 .sliding-frames.translate-1 .framed-text {
@@ -874,7 +886,7 @@ a.framed-text h2 {
 .main-screen .vision {
   min-height: calc(55vh - 67px - 120px);
 }
-@media (max-width: 1280px) {
+@media (max-width: 1320px) {
   .main-screen .event-details .date {
     font-size: 200%;
   }
@@ -912,31 +924,23 @@ a.framed-text h2 {
   }
 }
 .performers .intro-container {
-  height: 20vh;
+  min-height: 20vh;
   margin-bottom: 50px;
 }
 .performers .intro-container .center {
   width: 100%;
 }
 @media (max-width: 850px) {
-  .performers .intro-container {
-    height: 30vh;
-  }
-}
-.gallery .intro-container {
-  height: 20vh;
-  margin-bottom: 50px;
-}
-.gallery .intro-container .center {
-  width: 100%;
-}
-@media (max-width: 850px) {
   .gallery .intro-container {
-    height: 30vh;
+    height: 20vh;
+    margin-bottom: 50px;
+  }
+  .gallery .intro-container .center {
+    width: 100%;
   }
 }
 .gallery .intro-container {
-  height: 15vh;
+  min-height: 15vh;
   margin-bottom: 50px;
 }
 .gallery .intro-container .center {
@@ -1017,7 +1021,7 @@ a.framed-text h2 {
 .gallery .gallery-content.dark > ul > li a {
   border: 3px solid #04070a;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1320px) {
   .gallery .intro-container {
     height: 20vh;
   }
@@ -1025,7 +1029,7 @@ a.framed-text h2 {
     width: calc(33% - 15px);
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .gallery .intro-container {
     height: 25vh;
   }

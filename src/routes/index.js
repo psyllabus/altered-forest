@@ -15,7 +15,7 @@ for (const route in routes) {
     if (routes.hasOwnProperty(route)) {
         const { view, title } = routes[route];
         router.get(route, function (req, res, next) {
-            res.render(view, { title });
+            res.render(view, Object.assign({ title }, res.locals));
         });
     }
 }

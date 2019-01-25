@@ -14,7 +14,6 @@
 
 .framed-text
     margin-bottom 25px
-
     color white
     text-decoration none !important
 
@@ -100,21 +99,23 @@ slider-controls-style()
     opacity 0.5
     transition opacity 500ms ease-in-out
     top -150px
-    z-index 100
+    z-index: 1;  // 0 so it goes below the navbar  - was 100 before but i don't remember why
     fadingLightOn()
 
 
 FRAME_MARGIN = 30vw
-.sliding-frames // TODO this should probably live in the `components.styl`?
+.sliding-frames
     white-space nowrap
     // overflow hidden
     margin '0 -%s' % (FRAME_MARGIN)
     position relative
+    // create a different stacking context, so the previous/next controls appear under the navbar despite having a lower z-index
+    opacity: 0.99
 
     > .previous
         // content "\f0d9"
         slider-controls-style()
-        left calc(20vw + 25px);
+        left 'calc(%s + 25px)' % FRAME_MARGIN
         padding 200px 400px 200px 100px
         margin-left -100px
 
@@ -124,7 +125,7 @@ FRAME_MARGIN = 30vw
     > .next
         // content "\f0da"
         slider-controls-style()
-        right calc(20vw + 25px);
+        right 'calc(%s + 25px)' % FRAME_MARGIN
         padding 200px 100px 200px 400px
         margin-right -100px
 
@@ -196,6 +197,14 @@ FRAME_MARGIN = 30vw
 
         .spacer
             display none
+
+    .sliding-frames
+        > .previous
+            padding-right: 10vw
+        > .next
+            padding-left: 10vw
+
+
 
 for num in (1..SLIDING_FRAMES_MAX_NB)
     .sliding-frames.translate-{num}

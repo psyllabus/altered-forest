@@ -8,7 +8,8 @@ $(function () {
         nbSec: $countdown.find('#seconds .count')
     }
     var $date = $('#event-date');
-    $date.text(DATE.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
+    var langToLocale = { en: 'en-US', fr: 'fr-CA' };
+    $date.text(DATE.toLocaleDateString(langToLocale[window.initData.lang], { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }));
 
     function getRemainingTimeTo(date) {
         var now = new Date();

@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var stylus = require('stylus');
+var { i18nMiddleware } = require('./services/i18nService');
 
 var indexRouter = require('./routes/index');
 
@@ -17,6 +18,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(i18nMiddleware(app));
 app.use(stylus.middleware({
     src: path.join(__dirname, '/styles/'),
     dest: path.join(__dirname, '../public/stylesheets/'),
@@ -39,10 +41,10 @@ app.use(function(err, req, res, next) {
     // render the error page
     res.status(err.status || 500);
     if (err.status === 404) {
-        res.render('construction');
+        res.render("construction", Object.assign({}, res.locals));
     }
     else {
-        res.render('error');
+        res.render('error', Object.assign({}, res.locals));
     }
 });
 
