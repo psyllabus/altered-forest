@@ -931,13 +931,24 @@ a.framed-text h2 {
   width: 100%;
 }
 @media (max-width: 850px) {
-  .gallery .intro-container {
-    height: 20vh;
+  .performers .intro-container {
     margin-bottom: 50px;
   }
-  .gallery .intro-container .center {
+  .performers .intro-container .center {
     width: 100%;
   }
+}
+.location .intro-container {
+  margin-bottom: 80px;
+}
+.location .sub-album {
+  white-space: nowrap;
+  height: 100%;
+  overflow: hidden;
+}
+.location .sub-album-text {
+  margin: 25px 0;
+  padding-bottom: 15px;
 }
 .gallery .intro-container {
   min-height: 15vh;
@@ -946,21 +957,28 @@ a.framed-text h2 {
 .gallery .intro-container .center {
   width: 100%;
 }
-.gallery .gallery-content .album {
+.gallery ul.album,
+.location ul.album,
+.gallery ul.sub-album,
+.location ul.sub-album {
   margin-top: 25px;
-}
-.gallery .gallery-content > ul {
   margin-bottom: 0;
   padding-left: 15px;
 }
-.gallery .gallery-content > ul > li {
+.gallery ul.album > li,
+.location ul.album > li,
+.gallery ul.sub-album > li,
+.location ul.sub-album > li {
   margin-bottom: 15px;
   width: calc(25% - 15px);
   display: inline-block;
   margin-right: 15px;
   list-style: outside none none;
 }
-.gallery .gallery-content > ul > li a {
+.gallery ul.album > li a,
+.location ul.album > li a,
+.gallery ul.sub-album > li a,
+.location ul.sub-album > li a {
   border: 3px solid #000;
   border-radius: 3px;
   display: block;
@@ -969,7 +987,10 @@ a.framed-text h2 {
   float: left;
   line-height: 0;
 }
-.gallery .gallery-content > ul > li a > img {
+.gallery ul.album > li a > img,
+.location ul.album > li a > img,
+.gallery ul.sub-album > li a > img,
+.location ul.sub-album > li a > img {
   -webkit-transition: -webkit-transform 0.15s ease 0s;
   -moz-transition: -moz-transform 0.15s ease 0s;
   -o-transition: -o-transform 0.15s ease 0s;
@@ -979,17 +1000,29 @@ a.framed-text h2 {
   height: 100%;
   width: 100%;
 }
-.gallery .gallery-content > ul > li a:hover > img {
+.gallery ul.album > li a:hover > img,
+.location ul.album > li a:hover > img,
+.gallery ul.sub-album > li a:hover > img,
+.location ul.sub-album > li a:hover > img {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
 }
-.gallery .gallery-content > ul > li a:hover .gallery-content-poster {
+.gallery ul.album > li a:hover .gallery-content-poster,
+.location ul.album > li a:hover .gallery-content-poster,
+.gallery ul.sub-album > li a:hover .gallery-content-poster,
+.location ul.sub-album > li a:hover .gallery-content-poster {
   background-color: rgba(0,0,0,0.5);
 }
-.gallery .gallery-content > ul > li a:hover .gallery-content-poster > img {
+.gallery ul.album > li a:hover .gallery-content-poster > img,
+.location ul.album > li a:hover .gallery-content-poster > img,
+.gallery ul.sub-album > li a:hover .gallery-content-poster > img,
+.location ul.sub-album > li a:hover .gallery-content-poster > img {
   opacity: 1;
 }
-.gallery .gallery-content > ul > li a .gallery-content-poster {
+.gallery ul.album > li a .gallery-content-poster,
+.location ul.album > li a .gallery-content-poster,
+.gallery ul.sub-album > li a .gallery-content-poster,
+.location ul.sub-album > li a .gallery-content-poster {
   background-color: rgba(0,0,0,0.1);
   bottom: 0;
   left: 0;
@@ -1000,7 +1033,10 @@ a.framed-text h2 {
   -o-transition: background-color 0.15s ease 0s;
   transition: background-color 0.15s ease 0s;
 }
-.gallery .gallery-content > ul > li a .gallery-content-poster > img {
+.gallery ul.album > li a .gallery-content-poster > img,
+.location ul.album > li a .gallery-content-poster > img,
+.gallery ul.sub-album > li a .gallery-content-poster > img,
+.location ul.sub-album > li a .gallery-content-poster > img {
   left: 50%;
   margin-left: -10px;
   margin-top: -10px;
@@ -1011,45 +1047,67 @@ a.framed-text h2 {
   -o-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
 }
-.gallery .gallery-content .video .demo-gallery-poster img {
+.gallery ul.album .video .demo-gallery-poster img,
+.location ul.album .video .demo-gallery-poster img,
+.gallery ul.sub-album .video .demo-gallery-poster img,
+.location ul.sub-album .video .demo-gallery-poster img {
   height: 48px;
   margin-left: -24px;
   margin-top: -24px;
   opacity: 0.8;
   width: 48px;
 }
-.gallery .gallery-content.dark > ul > li a {
+.gallery ul.album.dark > .album > li a,
+.location ul.album.dark > .album > li a,
+.gallery ul.sub-album.dark > .album > li a,
+.location ul.sub-album.dark > .album > li a,
+.gallery ul.album.dark > .sub-album > li a,
+.location ul.album.dark > .sub-album > li a,
+.gallery ul.sub-album.dark > .sub-album > li a,
+.location ul.sub-album.dark > .sub-album > li a {
   border: 3px solid #04070a;
 }
 @media (max-width: 1320px) {
   .gallery .intro-container {
-    height: 20vh;
+    min-height: 20vh;
   }
-  .gallery .gallery-content ul.album li.picture {
-    width: calc(33% - 15px);
+  .gallery .album li.picture,
+  .location .album li.picture,
+  .gallery .sub-album li.picture,
+  .location .sub-album li.picture {
+    width: calc(25% - 15px);
   }
 }
 @media (max-width: 1100px) {
   .gallery .intro-container {
-    height: 25vh;
+    min-height: 25vh;
   }
-  .gallery .gallery-content ul.album li.picture {
-    width: calc(25% - 15px);
+  .gallery .album li.picture,
+  .location .album li.picture,
+  .gallery .sub-album li.picture,
+  .location .sub-album li.picture {
+    width: calc(33% - 8px);
   }
 }
 @media (max-width: 850px) {
   .gallery .intro-container {
-    height: 30vh;
+    min-height: 30vh;
   }
-  .gallery .gallery-content ul.album li.picture {
+  .gallery .album li.picture,
+  .location .album li.picture,
+  .gallery .sub-album li.picture,
+  .location .sub-album li.picture {
     width: calc(50% - 15px);
   }
 }
 @media (max-width: 600px) {
   .gallery .intro-container {
-    height: 40vh;
+    min-height: 40vh;
   }
-  .gallery .gallery-content ul.album li.picture {
+  .gallery .album li.picture,
+  .location .album li.picture,
+  .gallery .sub-album li.picture,
+  .location .sub-album li.picture {
     width: calc(100% - 15px);
   }
 }

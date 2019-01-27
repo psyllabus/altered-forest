@@ -107,15 +107,21 @@ var translations = {
         albums: {
             'af2018-alex': {
                 title: { en: 'Altered Forest 2018, by Alex' },
-                descriptionp1: { en: "If you are Alex who took these pictures and want some proper credit, please write at rom1guyot@protonmail.com and I'll make the appropriate changes" },
-                descriptionp2: { en: 'To my defense it\'s Craig\'s fault, he just sent to me a bunch of images titled "Alex\'s Pictures" but I have no idea who Alex is in real life :p' }
+                descriptionP1: { en: "If you are Alex who took these pictures and want some proper credit, please write at rom1guyot@protonmail.com and I'll make the appropriate changes" },
+                descriptionP2: { en: 'To my defense it\'s Craig\'s fault, he just sent to me a bunch of images titled "Alex\'s Pictures" but I have no idea who Alex is in real life :p' }
             }
         }
     },
+    location: {
+        title: { _ref: 'nav.location' },
+        descriptionP1: { en: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam illo quidem reprehenderit doloremque asperiores ut consequuntur maiores amet vero ipsam exercitationem, consectetur nobis dolores a libero earum incidunt inventore provident.' },
+        descriptionP2: { en: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam illo quidem reprehenderit doloremque asperiores ut consequuntur maiores amet vero ipsam exercitationem, consectetur nobis dolores a libero earum incidunt inventore provident.' },
+        descriptionP3: { en: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam illo quidem reprehenderit doloremque asperiores ut consequuntur maiores amet vero ipsam exercitationem, consectetur nobis dolores a libero earum incidunt inventore provident.' },
+    },
     wip: {
         title: { en: 'Work in Progress', fr: 'Site en Construction' },
-        descriptionp1: { en: 'The tribe is hard at work bringing you the best altered forest experience they are able to provide.', fr: 'La tribue travaille d\'arrache-pieds pour vous procurer la meilleure experience Altered Forest qu\'elle peut vous fournir' },
-        descriptionp2: { en: 'Come back in a few days to explore the website further and learn more about the wonderful surprises the tribe is brewing!', fr: 'Revenez dans quelques jours pour explorer le site web et en apprendre plus sur les surprises que la tribue a en reserve !'}
+        descriptionP1: { en: 'The tribe is hard at work bringing you the best altered forest experience they are able to provide.', fr: 'La tribue travaille d\'arrache-pieds pour vous procurer la meilleure experience Altered Forest qu\'elle peut vous fournir' },
+        descriptionP2: { en: 'Come back in a few days to explore the website further and learn more about the wonderful surprises the tribe is brewing!', fr: 'Revenez dans quelques jours pour explorer le site web et en apprendre plus sur les surprises que la tribue a en reserve !'}
     },
     'pound.the.ground': { en: '- Pound the Ground', fr: '- Tape du pied' }
 };

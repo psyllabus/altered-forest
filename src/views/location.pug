@@ -1,0 +1,50 @@
+extends layout
+
+
+block styles
+    link(type="text/css" rel="stylesheet" href="/stylesheets/lightgallery.min.css")
+    link(type="text/css" rel="stylesheet" href="/stylesheets/lg-transitions.min.css")
+    link(type="text/css" rel="stylesheet" href="/stylesheets/lg-fb-comment-box.min.css")
+
+block content
+    .location
+        .intro-container
+            .center
+                h1
+                    +translate('location.title')
+                h2 Ducros, Quebec, Canada
+        .album
+            ul.sub-album
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36587789_1928402423871651_1471174019985178624_o.jpg?_nc_cat=105&_nc_ht=scontent.fybz1-1.fna&oh=854bd5db475442e799b764aa01a8eeec&oe=5CF6E776", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36623680_1928402347204992_25846262783803392_o.jpg?_nc_cat=111&_nc_ht=scontent.fybz1-1.fna&oh=47d38efce2f69e9b8505f0d6d3674047&oe=5CBBB671", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36631713_1928401987205028_7212669851553234944_o.jpg?_nc_cat=101&_nc_ht=scontent.fybz1-1.fna&oh=60b61261dab26c34a13b2efeb66c5f0c&oe=5CF23998", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36636122_1928401843871709_818776270203518976_o.jpg?_nc_cat=111&_nc_ht=scontent.fybz1-1.fna&oh=57043c009fcd3768d3f16f9336da379c&oe=5CF8D5FC", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36623734_1928401883871705_3462645600888029184_o.jpg?_nc_cat=103&_nc_ht=scontent.fybz1-1.fna&oh=a54368935c2b4797b4ffab8798c739a4&oe=5CEFAC14", "Some Title", "Some Comment")
+
+            .sub-album-text.center
+                p= translate('location.descriptionP1')
+
+            ul.sub-album
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36587789_1928402423871651_1471174019985178624_o.jpg?_nc_cat=105&_nc_ht=scontent.fybz1-1.fna&oh=854bd5db475442e799b764aa01a8eeec&oe=5CF6E776", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36623680_1928402347204992_25846262783803392_o.jpg?_nc_cat=111&_nc_ht=scontent.fybz1-1.fna&oh=47d38efce2f69e9b8505f0d6d3674047&oe=5CBBB671", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36631713_1928401987205028_7212669851553234944_o.jpg?_nc_cat=101&_nc_ht=scontent.fybz1-1.fna&oh=60b61261dab26c34a13b2efeb66c5f0c&oe=5CF23998", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36636122_1928401843871709_818776270203518976_o.jpg?_nc_cat=111&_nc_ht=scontent.fybz1-1.fna&oh=57043c009fcd3768d3f16f9336da379c&oe=5CF8D5FC", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36623734_1928401883871705_3462645600888029184_o.jpg?_nc_cat=103&_nc_ht=scontent.fybz1-1.fna&oh=a54368935c2b4797b4ffab8798c739a4&oe=5CEFAC14", "Some Title", "Some Comment")
+
+            .sub-album-text.center
+                p= translate('location.descriptionP2')
+
+            ul.sub-album
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36587789_1928402423871651_1471174019985178624_o.jpg?_nc_cat=105&_nc_ht=scontent.fybz1-1.fna&oh=854bd5db475442e799b764aa01a8eeec&oe=5CF6E776", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36623680_1928402347204992_25846262783803392_o.jpg?_nc_cat=111&_nc_ht=scontent.fybz1-1.fna&oh=47d38efce2f69e9b8505f0d6d3674047&oe=5CBBB671", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36631713_1928401987205028_7212669851553234944_o.jpg?_nc_cat=101&_nc_ht=scontent.fybz1-1.fna&oh=60b61261dab26c34a13b2efeb66c5f0c&oe=5CF23998", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36636122_1928401843871709_818776270203518976_o.jpg?_nc_cat=111&_nc_ht=scontent.fybz1-1.fna&oh=57043c009fcd3768d3f16f9336da379c&oe=5CF8D5FC", "Some Title", "Some Comment")
+                +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36623734_1928401883871705_3462645600888029184_o.jpg?_nc_cat=103&_nc_ht=scontent.fybz1-1.fna&oh=a54368935c2b4797b4ffab8798c739a4&oe=5CEFAC14", "Some Title", "Some Comment")
+
+            .sub-album-text.center
+                p= translate('location.descriptionP3')
+
+block scripts
+    script(type="application/javascript" src="/javascripts/jquery.mousewheel.min.js")
+    script(type="application/javascript" src="/javascripts/lightgallery-all.min.js")
+    script(type="application/javascript" src="/javascripts/custom/location.js")
