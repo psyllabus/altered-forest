@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+    .contact
+        .intro-container
+            .center
+                h1= translate('info.contact.title')
+                h3
+                    = translate('info.contact.descriptionP1')
+                    a(href="mailto:" + locals.contact)= locals.contact
+                    = translate('info.contact.descriptionP2')
+                h3
+                    = translate('info.contact.descriptionP3')
+                    a(href='/info/applications')= translate('info.contact.descriptionP4')
+                    = translate('info.contact.descriptionP5')
+                p= translate('info.contact.helpText')
+        form(action="/info/contact" method="POST" onsubmit="return validateContactForm()")
+            .field
+                label(for="sender")= translate('info.contact.sender') + '*'
+                input(type="email" id="sender" name="sender")
+            .field
+                label(for="subject")= translate('info.contact.subject') + '*'
+                input(type="text" id="subject" name="subject")
+            .field
+                label(for="body")= translate('info.contact.body') + '*'
+                textarea(id="body" name="body")
+            .submit-container
+                input.submit(type="submit" value=translate('info.contact.submit'))
+
+block scripts
+    script(src="/javascripts/ckeditor5-build-classic/ckeditor.js")
+    script(type="application/javascript" src="/javascripts/custom/contact.js")

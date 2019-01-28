@@ -99,7 +99,7 @@ slider-controls-style()
     opacity 0.5
     transition opacity 500ms ease-in-out
     top -150px
-    z-index: 1;  // 0 so it goes below the navbar  - was 100 before but i don't remember why
+    z-index 1;  // 0 so it goes below the navbar  - was 100 before but i don't remember why
     fadingLightOn()
 
 
@@ -110,7 +110,7 @@ FRAME_MARGIN = 30vw
     margin '0 -%s' % (FRAME_MARGIN)
     position relative
     // create a different stacking context, so the previous/next controls appear under the navbar despite having a lower z-index
-    opacity: 0.99
+    opacity 0.99
 
     > .previous
         // content "\f0d9"
@@ -141,6 +141,35 @@ FRAME_MARGIN = 30vw
         transition transform 300ms ease-out
         transform translateX(0)
         // transform translateX(calc(-120vw - 12.5px));
+
+.linkedPage
+    display inline-block
+    width calc(50% - 40px)
+    margin 0 15px 50px 15px
+    border 5px solid black
+    border-radius 2px
+    background-color rgba(0, 0, 64, 0.8)
+    box-shadow 5px 5px 20px black
+    color white
+    text-decoration none
+
+    .image
+        height 250px;
+        box-sizing border-box;
+        background-size cover;
+        background-position 50%;
+
+    .text-container
+        padding 0 25px
+
+    .link
+        color LINK_COLOR
+        text-decoration underline
+        word-break: break-all;
+
+@media TABLET_LANDSCAPE
+    .linkedPage
+        width calc(50% - 40px)
 
 @media TABLET_PORTRAIT
     .framed-text.left
@@ -176,6 +205,8 @@ FRAME_MARGIN = 30vw
         .text-container
             margin-right 120px
 
+    .linkedPage
+        width calc(100% - 30px)
 
 @media PHONE_PORTRAIT
     .framed-text.left
@@ -200,9 +231,9 @@ FRAME_MARGIN = 30vw
 
     .sliding-frames
         > .previous
-            padding-right: 10vw
+            padding-right 10vw
         > .next
-            padding-left: 10vw
+            padding-left 10vw
 
 
 

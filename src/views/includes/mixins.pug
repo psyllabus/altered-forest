@@ -35,6 +35,15 @@ mixin framedContent(image, side, link)
             +_framedContent(image, side)
                 block
 
+mixin linkedPage(image, link, target, showLink)
+    a(href=link target=target class!=(attributes.class || '') + ' linkedPage')
+        div.image(style="background-image: url('" + image + "')")
+        .text-container
+            .text-content
+                block
+                if showLink
+                    p.link= link
+
 mixin slidingFrames(position)
     .sliding-frames(class=((attributes.class || '') + position ? ' translate-' + (position - 1) : ''))
         span.previous.hidden

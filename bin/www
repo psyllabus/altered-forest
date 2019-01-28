@@ -4,6 +4,8 @@
  * Module dependencies.
  */
 
+ require("dotenv").config();
+
 var app = require('../src/app');
 var debug = require('debug')('altered-forest:server');
 var http = require('http');

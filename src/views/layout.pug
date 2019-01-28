@@ -13,6 +13,8 @@ html
   body
     include includes/nav.pug
 
+    .flashMessage.hidden
+
     .background
     .container
       .main-content
@@ -33,7 +35,14 @@ html
 
   script(type="application/javascript" src="/javascripts/jquery-3.3.1.slim.min.js")
   script(type="application/javascript" src="/javascripts/custom/layout.js")
+  script(type="application/javascript" src="/javascripts/custom/flashMessage.js")
   script.
     window.initData = {};
     window.initData.lang = "#{lang}";
+    window.initData.contact = "#{contact}";
+    if ("#{flashMessage}".length > 0) {
+      window.initData.flashMessage = {}
+      window.initData.flashMessage.text = "#{translate((flashMessage || {}).text || '')}"
+      window.initData.flashMessage.type = "#{(flashMessage || {}).type || ''}"
+    }
   block scripts

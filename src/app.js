@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var stylus = require('stylus');
 var { i18nMiddleware } = require('./services/i18nService');
+var { emailMiddleware } = require('./services/emailService');
 
 var indexRouter = require('./routes/index');
 
@@ -19,6 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(i18nMiddleware(app));
+app.use(emailMiddleware());
 app.use(stylus.middleware({
     src: path.join(__dirname, '/styles/'),
     dest: path.join(__dirname, '../public/stylesheets/'),

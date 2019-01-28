@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+    .info
+        .intro-container
+            .center
+                h1= translate('info.title')
+        .links
+            +linkedPage('/images/tips.jpg', '/info/tips')
+                h3= translate('nav.info.tips')
+            +linkedPage('/images/camping.jpg', '/info/camping')
+                h3= translate('nav.info.camping')
+            +linkedPage('/images/applications.jpg', '/info/applications')
+                h3= translate('nav.info.applications')
+            +linkedPage('/images/contact.jpg', '/info/contact')
+                h3= translate('nav.info.contact')

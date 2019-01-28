@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+    .info
+        .intro-container
+            .center
+                h1= translate('info.applications.title')
+        .links
+            +linkedPage('/images/music.jpg', 'https://docs.google.com/forms/d/e/1FAIpQLScGWJBg-F-ErEYoyvhM3vegKbX-k8e4qDYXVQUzXVmxRzOmCg/viewform', '_blank', true)(class="music")
+                h3= translate('info.applications.music.title')
+                p= translate('info.applications.music.description')
+            +linkedPage('/images/workshop.jpg', 'https://docs.google.com/forms/d/e/1FAIpQLSckumoEzC1uJ8gjVP1x_CnqmS_j1ZjZ7MeGKBpThGMzRL5U3A/viewform', '_blank', true)(class="workshop")
+                h3= translate('info.applications.workshop.title')
+                p= translate('info.applications.workshop.description')
+            +linkedPage('/images/vendor.jpg', 'https://docs.google.com/forms/d/e/1FAIpQLScC8uRbHKMJrHnQY9GeOTtd6sEqO_UHjXD4Uc060RiLrURAAQ/viewform', '_blank', true)(class="vendor")
+                h3= translate('info.applications.vendor.title')
+                p= translate('info.applications.vendor.descriptionP1')
+                p= translate('info.applications.vendor.descriptionP2')
+            +linkedPage('/images/tribe.jpg', 'https://docs.google.com/forms/d/e/1FAIpQLSeZryKNT-m2SwPGcS9BDUki6vHAYutwOZYzmA5T9Owv3Kf93A/viewform', '_blank', true)(class="tribe")
+                h3= translate('info.applications.tribe.title')
+                p= translate('info.applications.tribe.description')
