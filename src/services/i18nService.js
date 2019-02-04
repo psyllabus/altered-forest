@@ -106,9 +106,9 @@ var translations = {
         title: { _ref: 'nav.gallery' },
         albums: {
             'af2018-alex': {
-                title: { en: 'Altered Forest 2018, by Alex' },
-                descriptionP1: { en: "If you are Alex who took these pictures and want some proper credit, please write at rom1guyot@protonmail.com and I'll make the appropriate changes" },
-                descriptionP2: { en: 'To my defense it\'s Craig\'s fault, he just sent to me a bunch of images titled "Alex\'s Pictures" but I have no idea who Alex is in real life :p' }
+                title: { en: 'Altered Forest 2018' },
+                descriptionP1: { en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cumque aspernatur nemo natus itaque earum nam perspiciatis vel deleniti, vitae illum rem. Odio earum incidunt cupiditate quae laborum ipsam veniam! lorem" },
+                descriptionP2: { en: 'Doloremque distinctio ipsam quibusdam ratione beatae sit consequatur voluptas repellat, voluptate quas quidem consequuntur, minima at modi. Minima natus nulla quas doloribus.' }
             }
         }
     },

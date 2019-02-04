@@ -81,6 +81,14 @@ mixin picture(link, title, comment)
             div.gallery-content-poster
                 img(src="/images/zoom.png")
 
+mixin video(link, thumbnail, title, comment)
+    - var subcontent = ''
+    - if (title) { subcontent = '<h4>' + title + '</h4>'; }
+    - if (comment) { subcontent = (subcontent || '') + '<p>' + comment + '</p>'; }
+    li.picture(data-src=link data-sub-html=subcontent)
+        a(href=link data-poster=thumbnail)
+            img.img-responsive(src=thumbnail)
+
 mixin scrollHint()
     .scroll-hint
         span.fas.fa-angle-down
