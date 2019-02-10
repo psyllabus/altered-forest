@@ -1,7 +1,7 @@
-mixin navItem(className, link, text)
+mixin navItem(className, link, text, target)
     .nav-item
         .content
-            a.highlight(href=link)
+            a.highlight(href=link target=target)
                 if text
                     = text
                 else if block
