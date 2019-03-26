@@ -1,5 +1,5 @@
 mixin navItem(className, link, text, target)
-    .nav-item
+    .nav-item(class=className)
         .content
             a.highlight(href=link target=target)
                 if text
@@ -8,6 +8,11 @@ mixin navItem(className, link, text, target)
                     block
                 else
                     = 'Placeholder'
+
+mixin imgNavItem(className, link, imgSrc)
+    .nav-item.img(class=className)
+        .content
+            a.highlight(href=link target=target style="background-image: url(\"" + imgSrc + '")')
 
 mixin dropdownNavItem(className, link, text, dropdown)
     .nav-item

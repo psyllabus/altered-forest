@@ -1,6 +1,6 @@
 .header
   nav.navbar
-    +navItem('logo', '/',  'AF')
+    +imgNavItem('logo', '/',  '/images/logos/simplified.png')
     .spacer
     +dropdownNavItem('performers', '/performers', translate('nav.performers.title'), [
       {link: '/performers/audio', text: translate('nav.performers.audio')},
@@ -22,7 +22,7 @@
     else
       +navItem('francais', '/lang/fr?url=' + url,  'Francais')
   nav.mobile-navbar
-    +navItem('logo', '/',  'AF')
+    +imgNavItem('logo', '/',  '/images/logos/simplified.png')
     .spacer
     .nav-item
       .content

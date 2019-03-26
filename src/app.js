@@ -21,10 +21,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(i18nMiddleware(app));
 app.use(emailMiddleware());
-app.use(stylus.middleware({
-    src: path.join(__dirname, '/styles/'),
-    dest: path.join(__dirname, '../public/stylesheets/'),
-}));
+app.use(
+	stylus.middleware({
+		src: path.join(__dirname, "/styles/"),
+		dest: path.join(__dirname, "../public/stylesheets/"),
+		linenos: true
+	})
+);
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.use('/', indexRouter);

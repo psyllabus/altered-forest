@@ -23,19 +23,9 @@
         shape-outside polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%)
         margin-bottom 10px
 
-    img.spacer
-        width 200px
-        height 200px
-        visibility hidden
-
-    &.left img.spacer
-        float right
-        -webkit-shape-outside polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%)
-        shape-outside polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%)
-    &.right img.spacer
-        -webkit-shape-outside polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%)
-        shape-outside polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%)
-        float left
+        &.inverted
+            shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
+            -webkit-shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
 
     &.left img.framed-image
         float left
@@ -44,8 +34,6 @@
     &.right img.framed-image
         float right
         margin-left 50px;
-        // shape-outside polygon(50% 0%, 50% 0%, 90% 100%, 10% 100%)
-        // -webkit-shape-outside polygon(50% 0%, 50% 0%, 90% 100%, 10% 100%)
 
     .text-container
         // seems impossible to align vertically without screwing up the triangle shape :(
@@ -77,6 +65,17 @@
             margin-right 175px
             // display inline-block
 
+
+    &.inverted
+        img.framed-image
+            shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
+            -webkit-shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
+
+        &.right
+            img.framed-image
+                shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 45% 100%)
+                -webkit-shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 45% 100%)
+
 a.framed-text
     h1
     h2
@@ -103,11 +102,12 @@ slider-controls-style()
     fadingLightOn()
 
 
-FRAME_MARGIN = 30vw
+FRAME_MARGIN = 50px
 .sliding-frames
     white-space nowrap
     // overflow hidden
-    margin '0 -%s' % (FRAME_MARGIN)
+    margin 0
+    display: flex
     position relative
     // create a different stacking context, so the previous/next controls appear under the navbar despite having a lower z-index
     opacity 0.99
@@ -116,8 +116,9 @@ FRAME_MARGIN = 30vw
         // content "\f0d9"
         slider-controls-style()
         left 'calc(%s + 25px)' % FRAME_MARGIN
-        padding 200px 400px 200px 100px
+        padding 200px 100px 200px 100px
         margin-left -100px
+        margin-top: 50px
 
     > .previous:hover
         opacity 1 !important
@@ -126,8 +127,9 @@ FRAME_MARGIN = 30vw
         // content "\f0da"
         slider-controls-style()
         right 'calc(%s + 25px)' % FRAME_MARGIN
-        padding 200px 100px 200px 400px
+        padding 200px 100px 200px 100px
         margin-right -100px
+        margin-top: 100px
 
     > .next:hover
         opacity 1 !important
@@ -141,6 +143,40 @@ FRAME_MARGIN = 30vw
         transition transform 300ms ease-out
         transform translateX(0)
         // transform translateX(calc(-120vw - 12.5px));
+
+    .framed-text
+        min-width: 1100px
+
+        img.spacer
+            width 200px
+            height 200px
+            visibility hidden
+
+        &.left img.spacer
+            float right
+            -webkit-shape-outside polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%)
+            shape-outside polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%)
+            margin-top: 100px
+
+        &.right img.spacer
+            -webkit-shape-outside polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%)
+            shape-outside polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%)
+            float left
+
+        &.inverted
+            img.spacer
+                shape-outside polygon(100% 0%, 0% 90%, 0 90%, 100% 90%)
+                -webkit-shape-outside polygon(100% 0%, 0% 90%, 0 90%, 100% 90%)
+
+            &.right
+                img.spacer
+                    shape-outside polygon(90% 100%, 0% 100%, 0% 10%, 0% 10%)
+                    -webkit-shape-outside polygon(90% 100%, 0% 100%, 0% 10%, 0% 10%)
+
+        &.right:nth-of-type(1)
+            img.spacer
+                display: none
+
 
 .linkedPage
     display inline-block
@@ -168,22 +204,26 @@ FRAME_MARGIN = 30vw
         word-break: break-all;
 
 @media TABLET_LANDSCAPE
+    .framed-text.left
+    .framed-text.right
+        min-width: calc(100vw - 300px)
     .linkedPage
         width calc(50% - 40px)
 
 @media TABLET_PORTRAIT
     .framed-text.left
     .framed-text.right
-        img
+        img.framed-image
             height 200px
+        min-width: calc(100vw - 200px)
 
     .framed-text.left
-        img
+        img.framed-image
             margin-right 20px
         .text-container
             margin-left 120px
     .framed-text.right
-        img
+        img.framed-image
             margin-left 20px
         .text-container
             margin-right 120px
@@ -191,16 +231,16 @@ FRAME_MARGIN = 30vw
 @media PHONE_LANDSCAPE
     .framed-text.left
     .framed-text.right
-        img
+        img.framed-image
             height 200px
 
     .framed-text.left
-        img
+        img.framed-image
             margin-right 20px
         .text-container
             margin-left 120px
     .framed-text.right
-        img
+        img.framed-image
             margin-left 20px
         .text-container
             margin-right 120px
@@ -208,16 +248,31 @@ FRAME_MARGIN = 30vw
     .linkedPage
         width calc(100% - 30px)
 
+
+FRAME_MARGIN_PHONE = 30px
 @media PHONE_PORTRAIT
+    .sliding-frames
+
+        > .previous
+            left 'calc(%s + 25px)' % FRAME_MARGIN_PHONE
+
+        > .next
+            right 'calc(%s + 25px)' % FRAME_MARGIN_PHONE !important
+
+        .framed-text
+            margin 0 FRAME_MARGIN_PHONE !important
+
     .framed-text.left
     .framed-text.right
+        min-width: calc(100vw - 100px)
         // min-height inherit
 
-        img
+        img.framed-image
             margin-left -20px !important
             margin-right -20px !important
             height auto !important
-            width calc(100vw - 10px) !important
+            width calc(100vw - 70px) !important
+            height: auto
             margin-bottom 20px !important
             shape-outside none !important
 
@@ -235,7 +290,10 @@ FRAME_MARGIN = 30vw
         > .next
             padding-left 10vw
 
-
+    for num in (1..SLIDING_FRAMES_MAX_NB)
+        .sliding-frames.translate-{num}
+            .framed-text
+                transform translateX("calc(%s - %s)" % (num * -100% num * FRAME_MARGIN_PHONE * 2)) !important
 
 for num in (1..SLIDING_FRAMES_MAX_NB)
     .sliding-frames.translate-{num}

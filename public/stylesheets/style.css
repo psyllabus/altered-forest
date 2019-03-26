@@ -1,3 +1,15 @@
+
+/* line 297 : E:\dev\psyllabus\altered-forest\src\styles\style.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\node_modules\stylus\lib\functions\index.styl */
+
+/* line 19 : E:\dev\psyllabus\altered-forest\node_modules\stylus\lib\functions\index.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\constants.styl */
+
+/* line 326 : E:\dev\psyllabus\altered-forest\src\styles\constants.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @font-face {
   font-family: 'Neoterique';
   src: url("/fonts/Neoterique.ttf");
@@ -14,6 +26,8 @@
   font-family: 'New Academy';
   src: url("/fonts/NEWACADEMY.ttf");
 }
+
+/* line 19 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 html {
   font: 14px "Neoterique", "Lucida Grande", Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
@@ -21,27 +35,43 @@ html {
   color: #fff;
   margin: 0;
 }
+
+/* line 28 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 body {
   margin: 0;
 }
+
+/* line 31 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 a {
   color: #00b7ff;
 }
+
+/* line 34 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 h1 {
   font-size: 300%;
 }
+
+/* line 36 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 p {
   font: 14px "New Academy", Verdana, Geneva, sans-serif;
   letter-spacing: -1px;
   line-height: 1.2;
 }
+
+/* line 40 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .font-titles {
   font-family: "Neoterique", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
+/* line 43 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .font-text {
   font-family: "New Academy", Verdana, Geneva, sans-serif;
   letter-spacing: -1px;
 }
+
+/* line 55 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 56 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar,
 .header .mobile-navbar {
   position: fixed;
@@ -57,11 +87,15 @@ p {
   background-size: cover;
   background-color: transparent;
 }
+
+/* line 67 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar a,
 .header .mobile-navbar a {
   color: inherit;
   text-decoration: none;
 }
+
+/* line 71 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .spacer,
 .header .mobile-navbar .spacer {
   flex: 1;
@@ -73,10 +107,14 @@ p {
   background-color: transparent;
   z-index: 100;
 }
+
+/* line 76 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item,
 .header .mobile-navbar .nav-item {
   position: relative;
 }
+
+/* line 79 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item > .content,
 .header .mobile-navbar .nav-item > .content {
   white-space: nowrap;
@@ -87,22 +125,50 @@ p {
   background-size: cover;
   background-color: transparent;
 }
+
+/* line 83 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item .content,
 .header .mobile-navbar .nav-item .content {
   cursor: pointer;
   position: relative;
   z-index: 100;
 }
+
+/* line 88 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item .content .highlight,
 .header .mobile-navbar .nav-item .content .highlight {
   display: block;
   padding: 15px 25px;
   transition: background-color 200ms ease-out;
 }
+
+/* line 93 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item .content .highlight:hover,
 .header .mobile-navbar .nav-item .content .highlight:hover {
   background-color: rgba(255,255,255,0.3);
 }
+
+/* line 96 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+.header .navbar .nav-item.img > .content,
+.header .mobile-navbar .nav-item.img > .content {
+  height: calc(100% - 20px);
+  padding: 10px 10px;
+}
+
+/* line 100 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+.header .navbar .nav-item.img > .content > .highlight,
+.header .mobile-navbar .nav-item.img > .content > .highlight {
+  height: 100%;
+  padding: 0px !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  width: 50px;
+  filter: invert(100%);
+}
+
+/* line 113 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .dropdown,
 .header .mobile-navbar .dropdown {
   position: absolute;
@@ -116,42 +182,73 @@ p {
   background-size: cover;
   background-color: transparent;
 }
+
+/* line 120 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 122 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item:hover .dropdown,
 .header .mobile-navbar .nav-item:hover .dropdown,
 .header .navbar .nav-item:active .dropdown,
 .header .mobile-navbar .nav-item:active .dropdown {
   transform: translateY(0);
 }
+
+/* line 125 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item:hover > .content > .highlight,
 .header .mobile-navbar .nav-item:hover > .content > .highlight,
 .header .navbar .nav-item:active > .content > .highlight,
 .header .mobile-navbar .nav-item:active > .content > .highlight {
   background-color: rgba(255,255,255,0.3);
 }
+
+/* line 127 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 131 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .dropdown > .content:not(:last-child) {
   border-bottom: 1px solid #000;
 }
+
+/* line 134 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .mobile-navbar {
   display: none;
 }
+
+/* line 136 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .mobile-navbar .dropdown {
   position: fixed;
   left: 0;
 }
+
+/* line 140 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .mobile-navbar .dropdown .nav-item {
   display: block;
   width: 100vw;
   text-align: center;
 }
+
+/* line 145 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .mobile-navbar .dropdown .nav-item:not(:last-child) {
   border-bottom: 1px solid #000;
 }
+
+/* line 147 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 148 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 149 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+.header .mobile-navbar .nav-item.img > .content > .highlight {
+  width: 50px;
+}
+
+/* line 152 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .container {
   background-size: cover;
   margin-top: 120px;
   overflow-x: hidden;
   min-height: calc(100vh - 120px - 67px - 25px);
 }
+
+/* line 158 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .background {
   width: 100%;
   height: 100%;
@@ -168,10 +265,14 @@ p {
   background-size: cover;
   background-color: transparent;
 }
+
+/* line 169 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .main-content {
   width: 1200px;
   margin: auto;
 }
+
+/* line 173 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .footer {
   text-align: center;
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../images/background.jpg");
@@ -188,14 +289,22 @@ p {
   flex-direction: column;
   justify-content: center;
 }
+
+/* line 184 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 185 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .footer .social a {
   color: #fff;
 }
+
+/* line 187 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .footer .social span {
   padding: 0 10px;
   margin: 0 5px;
   font-size: 25px;
 }
+
+/* line 205 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .scroll-hint {
   font-size: 50px;
   position: fixed;
@@ -206,6 +315,8 @@ p {
   text-align: right;
   transition: opacity 0.5s linear;
 }
+
+/* line 215 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .scroll-hint span {
   opacity: 0;
   animation-name: fading-light;
@@ -214,29 +325,45 @@ p {
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
+
+/* line 219 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .scroll-hint.scrolled {
   opacity: 0 !important;
 }
+
+/* line 222 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .construction {
   height: calc(100vh - 120px - 67px);
 }
+
+/* line 225 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .hidden {
   display: none;
 }
+
+/* line 228 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .center {
   text-align: center;
 }
+
+/* line 231 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .vertical-center {
   position: relative;
 }
+
+/* line 234 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .vertical-center > div {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* line 239 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .intro-container {
   margin-bottom: 80px;
 }
+
+/* line 242 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .flashMessage {
   position: fixed;
   top: 0;
@@ -249,14 +376,20 @@ p {
   background-size: cover;
   background-color: transparent;
 }
+
+/* line 249 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .flashMessage.error {
   background-image: linear-gradient(rgba(180,0,0,0.8), rgba(180,0,0,0.8)), url("../images/background.jpg");
 }
+
+/* line 252 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .flashMessage > p {
   margin-right: 25px;
   margin-left: 25px;
   font-size: 130% !important;
 }
+
+/* line 257 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .flashMessage > #close {
   font-size: 150%;
   position: fixed;
@@ -265,173 +398,273 @@ p {
   cursor: pointer;
 }
 @media (max-width: 1320px) {
+
+/* line 265 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .main-content {
     max-width: calc(100% - 200px);
   }
+
+/* line 267 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 268 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar {
     font-size: 125% !important;
   }
+
+/* line 270 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar .highlight {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
 }
 @media (max-width: 1100px) {
+
+/* line 276 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .main-content {
     max-width: calc(100% - 100px);
   }
+
+/* line 278 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 279 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar {
     font-size: 110% !important;
   }
+
+/* line 281 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar .highlight {
     letter-spacing: 0.5px;
     padding-right: 10px !important;
     padding-left: 10px !important;
   }
+
+/* line 286 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+  .header .navbar.logo.img > .content > .highlight {
+    width: 40px;
+  }
 }
 @media (max-width: 850px) {
+
+/* line 291 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 292 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar {
     font-size: 90% !important;
   }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar .highlight {
     padding-right: 5px !important;
     padding-left: 5px !important;
   }
 }
 @media (max-width: 600px) {
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .main-content {
     max-width: calc(100% - 50px);
   }
+
+/* line 302 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 303 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar {
     display: none !important;
   }
+
+/* line 306 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .mobile-navbar {
     display: flex !important;
     font-size: 130% !important;
   }
+
+/* line 310 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .container {
     margin-top: 60px;
   }
+
+/* line 313 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .intro-container {
     margin-bottom: 40px;
   }
 }
+
+/* line 316 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-moz-keyframes fading-light {
+
+/* line 317 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 0.6;
   }
+
+/* line 319 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0;
   }
 }
+
+/* line 316 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-webkit-keyframes fading-light {
+
+/* line 317 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 0.6;
   }
+
+/* line 319 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0;
   }
 }
+
+/* line 316 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-o-keyframes fading-light {
+
+/* line 317 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 0.6;
   }
+
+/* line 319 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0;
   }
 }
+
+/* line 316 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @keyframes fading-light {
+
+/* line 317 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 0.6;
   }
+
+/* line 319 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0;
   }
 }
+
+/* line 322 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-moz-keyframes fading-light-on {
+
+/* line 323 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 1;
   }
+
+/* line 325 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0.4;
   }
 }
+
+/* line 322 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-webkit-keyframes fading-light-on {
+
+/* line 323 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 1;
   }
+
+/* line 325 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0.4;
   }
 }
+
+/* line 322 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-o-keyframes fading-light-on {
+
+/* line 323 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 1;
   }
+
+/* line 325 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0.4;
   }
 }
+
+/* line 322 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @keyframes fading-light-on {
+
+/* line 323 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 1;
   }
+
+/* line 325 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0.4;
   }
 }
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .socials {
   margin: 15px 0;
 }
+
+/* line 4 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .socials .social {
   margin: 0 5px;
   color: #fff;
   text-decoration: none;
   display: inline-block;
 }
+
+/* line 10 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .socials .social i {
   font-size: 150%;
   margin: 0 10px 0 0;
 }
+
+/* line 15 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text {
   margin-bottom: 25px;
   color: #fff;
   text-decoration: none !important;
 }
+
+/* line 20 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text img.framed-image {
   height: 300px;
   -webkit-shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
   shape-outside: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
   margin-bottom: 10px;
 }
-.framed-text img.spacer {
-  width: 200px;
-  height: 200px;
-  visibility: hidden;
+
+/* line 26 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.framed-text img.framed-image.inverted {
+  shape-outside: polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%);
+  -webkit-shape-outside: polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%);
 }
-.framed-text.left img.spacer {
-  float: right;
-  -webkit-shape-outside: polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%);
-  shape-outside: polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%);
-}
-.framed-text.right img.spacer {
-  -webkit-shape-outside: polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%);
-  shape-outside: polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%);
-  float: left;
-}
+
+/* line 30 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text.left img.framed-image {
   float: left;
   margin-right: 50px;
 }
+
+/* line 34 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text.right img.framed-image {
   float: right;
   margin-left: 50px;
 }
+
+/* line 38 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text .text-container {
   padding-top: 20px;
   margin-bottom: 50px;
   min-height: 240px;
 }
+
+/* line 45 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text .text-container .text-content {
   padding: 0 10px;
   border: 5px solid #000;
@@ -440,34 +673,75 @@ p {
   box-shadow: 5px 5px 20px #000;
   text-align: justify;
 }
+
+/* line 53 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text .text-container p {
   font-size: 120%;
 }
+
+/* line 56 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text.left {
   text-align: left;
 }
+
+/* line 58 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text.left > .text-container {
   margin-left: 175px;
 }
+
+/* line 61 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text.right {
   text-align: right;
 }
+
+/* line 64 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text.right > .text-container {
   margin-right: 175px;
 }
+
+/* line 69 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 70 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.framed-text.inverted img.framed-image {
+  shape-outside: polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%);
+  -webkit-shape-outside: polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%);
+}
+
+/* line 74 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 75 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.framed-text.inverted.right img.framed-image {
+  shape-outside: polygon(0% 0%, 100% 0%, 55% 100%, 45% 100%);
+  -webkit-shape-outside: polygon(0% 0%, 100% 0%, 55% 100%, 45% 100%);
+}
+
+/* line 79 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 80 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 a.framed-text h1,
 a.framed-text h2 {
   text-decoration: underline;
 }
+
+/* line 86 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 87 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 88 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .framed-text:last-child .text-container .text-content {
   margin-bottom: calc(67px + 67px);
 }
+
+/* line 106 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames {
   white-space: nowrap;
-  margin: 0 -30vw;
+  margin: 0;
+  display: flex;
   position: relative;
   opacity: 0.99;
 }
+
+/* line 115 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames > .previous {
   font-size: 100px;
   position: absolute;
@@ -480,13 +754,18 @@ a.framed-text h2 {
   animation-duration: 5s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  left: calc(30vw + 25px);
-  padding: 200px 400px 200px 100px;
+  left: calc(50px + 25px);
+  padding: 200px 100px 200px 100px;
   margin-left: -100px;
+  margin-top: 50px;
 }
+
+/* line 123 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames > .previous:hover {
   opacity: 1 !important;
 }
+
+/* line 126 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames > .next {
   font-size: 100px;
   position: absolute;
@@ -499,20 +778,77 @@ a.framed-text h2 {
   animation-duration: 5s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  right: calc(30vw + 25px);
-  padding: 200px 100px 200px 400px;
+  right: calc(50px + 25px);
+  padding: 200px 100px 200px 100px;
   margin-right: -100px;
+  margin-top: 100px;
 }
+
+/* line 134 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames > .next:hover {
   opacity: 1 !important;
 }
+
+/* line 137 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames .framed-text {
   display: inline-block;
   white-space: initial;
-  margin: 0 30vw;
+  margin: 0 50px;
   transition: transform 300ms ease-out;
   transform: translateX(0);
 }
+
+/* line 147 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.sliding-frames .framed-text {
+  min-width: 1100px;
+}
+
+/* line 150 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.sliding-frames .framed-text img.spacer {
+  width: 200px;
+  height: 200px;
+  visibility: hidden;
+}
+
+/* line 155 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.sliding-frames .framed-text.left img.spacer {
+  float: right;
+  -webkit-shape-outside: polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%);
+  shape-outside: polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%);
+  margin-top: 100px;
+}
+
+/* line 161 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.sliding-frames .framed-text.right img.spacer {
+  -webkit-shape-outside: polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%);
+  shape-outside: polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%);
+  float: left;
+}
+
+/* line 166 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 167 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.sliding-frames .framed-text.inverted img.spacer {
+  shape-outside: polygon(100% 0%, 0% 90%, 0 90%, 100% 90%);
+  -webkit-shape-outside: polygon(100% 0%, 0% 90%, 0 90%, 100% 90%);
+}
+
+/* line 171 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 172 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.sliding-frames .framed-text.inverted.right img.spacer {
+  shape-outside: polygon(90% 100%, 0% 100%, 0% 10%, 0% 10%);
+  -webkit-shape-outside: polygon(90% 100%, 0% 100%, 0% 10%, 0% 10%);
+}
+
+/* line 176 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 177 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+.sliding-frames .framed-text.right:nth-of-type(1) img.spacer {
+  display: none;
+}
+
+/* line 181 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .linkedPage {
   display: inline-block;
   width: calc(50% - 40px);
@@ -524,396 +860,1592 @@ a.framed-text h2 {
   color: #fff;
   text-decoration: none;
 }
+
+/* line 192 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .linkedPage .image {
   height: 250px;
   box-sizing: border-box;
   background-size: cover;
   background-position: 50%;
 }
+
+/* line 198 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .linkedPage .text-container {
   padding: 0 25px;
 }
+
+/* line 201 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .linkedPage .link {
   color: #00b7ff;
   text-decoration: underline;
   word-break: break-all;
 }
 @media (max-width: 1320px) {
+
+/* line 207 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.left,
+  .framed-text.right {
+    min-width: calc(100vw - 300px);
+  }
+
+/* line 210 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .linkedPage {
     width: calc(50% - 40px);
   }
 }
 @media (max-width: 1100px) {
-  .framed-text.left img,
-  .framed-text.right img {
+
+/* line 214 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.left,
+  .framed-text.right {
+    min-width: calc(100vw - 200px);
+  }
+
+/* line 216 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.left img.framed-image,
+  .framed-text.right img.framed-image {
     height: 200px;
   }
-  .framed-text.left img {
+
+/* line 220 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 221 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.left img.framed-image {
     margin-right: 20px;
   }
+
+/* line 223 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .framed-text.left .text-container {
     margin-left: 120px;
   }
-  .framed-text.right img {
+
+/* line 225 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 226 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.right img.framed-image {
     margin-left: 20px;
   }
+
+/* line 228 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .framed-text.right .text-container {
     margin-right: 120px;
   }
 }
 @media (max-width: 850px) {
-  .framed-text.left img,
-  .framed-text.right img {
+
+/* line 232 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 234 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.left img.framed-image,
+  .framed-text.right img.framed-image {
     height: 200px;
   }
-  .framed-text.left img {
+
+/* line 237 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 238 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.left img.framed-image {
     margin-right: 20px;
   }
+
+/* line 240 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .framed-text.left .text-container {
     margin-left: 120px;
   }
-  .framed-text.right img {
+
+/* line 242 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 243 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.right img.framed-image {
     margin-left: 20px;
   }
+
+/* line 245 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .framed-text.right .text-container {
     margin-right: 120px;
   }
+
+/* line 248 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .linkedPage {
     width: calc(100% - 30px);
   }
 }
 @media (max-width: 600px) {
-  .framed-text.left img,
-  .framed-text.right img {
+
+/* line 254 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 256 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames > .previous {
+    left: calc(30px + 25px);
+  }
+
+/* line 259 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames > .next {
+    right: calc(30px + 25px) !important;
+  }
+
+/* line 262 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames .framed-text {
+    margin: 0 30px !important;
+  }
+
+/* line 265 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.left,
+  .framed-text.right {
+    min-width: calc(100vw - 100px);
+  }
+
+/* line 270 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .framed-text.left img.framed-image,
+  .framed-text.right img.framed-image {
     margin-left: -20px !important;
     margin-right: -20px !important;
     height: auto !important;
-    width: calc(100vw - 10px) !important;
+    width: calc(100vw - 70px) !important;
+    height: auto;
     margin-bottom: 20px !important;
     shape-outside: none !important;
   }
+
+/* line 279 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .framed-text.left .text-container,
   .framed-text.right .text-container {
     margin-left: 0 !important;
     margin-right: 0 !important;
     text-align: left !important;
   }
+
+/* line 284 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .framed-text.left .spacer,
   .framed-text.right .spacer {
     display: none;
   }
+
+/* line 287 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 288 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .sliding-frames > .previous {
     padding-right: 10vw;
   }
+
+/* line 290 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
   .sliding-frames > .next {
     padding-left: 10vw;
   }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-1 .framed-text {
+    transform: translateX(calc(-100% - 60px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-2 .framed-text {
+    transform: translateX(calc(-200% - 120px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-3 .framed-text {
+    transform: translateX(calc(-300% - 180px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-4 .framed-text {
+    transform: translateX(calc(-400% - 240px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-5 .framed-text {
+    transform: translateX(calc(-500% - 300px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-6 .framed-text {
+    transform: translateX(calc(-600% - 360px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-7 .framed-text {
+    transform: translateX(calc(-700% - 420px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-8 .framed-text {
+    transform: translateX(calc(-800% - 480px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-9 .framed-text {
+    transform: translateX(calc(-900% - 540px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-10 .framed-text {
+    transform: translateX(calc(-1000% - 600px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-11 .framed-text {
+    transform: translateX(calc(-1100% - 660px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-12 .framed-text {
+    transform: translateX(calc(-1200% - 720px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-13 .framed-text {
+    transform: translateX(calc(-1300% - 780px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-14 .framed-text {
+    transform: translateX(calc(-1400% - 840px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-15 .framed-text {
+    transform: translateX(calc(-1500% - 900px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-16 .framed-text {
+    transform: translateX(calc(-1600% - 960px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-17 .framed-text {
+    transform: translateX(calc(-1700% - 1020px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-18 .framed-text {
+    transform: translateX(calc(-1800% - 1080px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-19 .framed-text {
+    transform: translateX(calc(-1900% - 1140px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-20 .framed-text {
+    transform: translateX(calc(-2000% - 1200px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-21 .framed-text {
+    transform: translateX(calc(-2100% - 1260px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-22 .framed-text {
+    transform: translateX(calc(-2200% - 1320px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-23 .framed-text {
+    transform: translateX(calc(-2300% - 1380px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-24 .framed-text {
+    transform: translateX(calc(-2400% - 1440px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-25 .framed-text {
+    transform: translateX(calc(-2500% - 1500px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-26 .framed-text {
+    transform: translateX(calc(-2600% - 1560px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-27 .framed-text {
+    transform: translateX(calc(-2700% - 1620px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-28 .framed-text {
+    transform: translateX(calc(-2800% - 1680px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-29 .framed-text {
+    transform: translateX(calc(-2900% - 1740px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-30 .framed-text {
+    transform: translateX(calc(-3000% - 1800px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-31 .framed-text {
+    transform: translateX(calc(-3100% - 1860px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-32 .framed-text {
+    transform: translateX(calc(-3200% - 1920px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-33 .framed-text {
+    transform: translateX(calc(-3300% - 1980px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-34 .framed-text {
+    transform: translateX(calc(-3400% - 2040px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-35 .framed-text {
+    transform: translateX(calc(-3500% - 2100px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-36 .framed-text {
+    transform: translateX(calc(-3600% - 2160px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-37 .framed-text {
+    transform: translateX(calc(-3700% - 2220px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-38 .framed-text {
+    transform: translateX(calc(-3800% - 2280px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-39 .framed-text {
+    transform: translateX(calc(-3900% - 2340px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-40 .framed-text {
+    transform: translateX(calc(-4000% - 2400px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-41 .framed-text {
+    transform: translateX(calc(-4100% - 2460px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-42 .framed-text {
+    transform: translateX(calc(-4200% - 2520px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-43 .framed-text {
+    transform: translateX(calc(-4300% - 2580px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-44 .framed-text {
+    transform: translateX(calc(-4400% - 2640px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-45 .framed-text {
+    transform: translateX(calc(-4500% - 2700px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-46 .framed-text {
+    transform: translateX(calc(-4600% - 2760px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-47 .framed-text {
+    transform: translateX(calc(-4700% - 2820px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-48 .framed-text {
+    transform: translateX(calc(-4800% - 2880px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-49 .framed-text {
+    transform: translateX(calc(-4900% - 2940px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-50 .framed-text {
+    transform: translateX(calc(-5000% - 3000px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-51 .framed-text {
+    transform: translateX(calc(-5100% - 3060px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-52 .framed-text {
+    transform: translateX(calc(-5200% - 3120px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-53 .framed-text {
+    transform: translateX(calc(-5300% - 3180px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-54 .framed-text {
+    transform: translateX(calc(-5400% - 3240px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-55 .framed-text {
+    transform: translateX(calc(-5500% - 3300px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-56 .framed-text {
+    transform: translateX(calc(-5600% - 3360px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-57 .framed-text {
+    transform: translateX(calc(-5700% - 3420px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-58 .framed-text {
+    transform: translateX(calc(-5800% - 3480px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-59 .framed-text {
+    transform: translateX(calc(-5900% - 3540px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-60 .framed-text {
+    transform: translateX(calc(-6000% - 3600px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-61 .framed-text {
+    transform: translateX(calc(-6100% - 3660px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-62 .framed-text {
+    transform: translateX(calc(-6200% - 3720px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-63 .framed-text {
+    transform: translateX(calc(-6300% - 3780px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-64 .framed-text {
+    transform: translateX(calc(-6400% - 3840px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-65 .framed-text {
+    transform: translateX(calc(-6500% - 3900px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-66 .framed-text {
+    transform: translateX(calc(-6600% - 3960px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-67 .framed-text {
+    transform: translateX(calc(-6700% - 4020px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-68 .framed-text {
+    transform: translateX(calc(-6800% - 4080px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-69 .framed-text {
+    transform: translateX(calc(-6900% - 4140px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-70 .framed-text {
+    transform: translateX(calc(-7000% - 4200px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-71 .framed-text {
+    transform: translateX(calc(-7100% - 4260px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-72 .framed-text {
+    transform: translateX(calc(-7200% - 4320px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-73 .framed-text {
+    transform: translateX(calc(-7300% - 4380px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-74 .framed-text {
+    transform: translateX(calc(-7400% - 4440px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-75 .framed-text {
+    transform: translateX(calc(-7500% - 4500px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-76 .framed-text {
+    transform: translateX(calc(-7600% - 4560px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-77 .framed-text {
+    transform: translateX(calc(-7700% - 4620px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-78 .framed-text {
+    transform: translateX(calc(-7800% - 4680px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-79 .framed-text {
+    transform: translateX(calc(-7900% - 4740px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-80 .framed-text {
+    transform: translateX(calc(-8000% - 4800px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-81 .framed-text {
+    transform: translateX(calc(-8100% - 4860px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-82 .framed-text {
+    transform: translateX(calc(-8200% - 4920px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-83 .framed-text {
+    transform: translateX(calc(-8300% - 4980px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-84 .framed-text {
+    transform: translateX(calc(-8400% - 5040px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-85 .framed-text {
+    transform: translateX(calc(-8500% - 5100px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-86 .framed-text {
+    transform: translateX(calc(-8600% - 5160px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-87 .framed-text {
+    transform: translateX(calc(-8700% - 5220px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-88 .framed-text {
+    transform: translateX(calc(-8800% - 5280px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-89 .framed-text {
+    transform: translateX(calc(-8900% - 5340px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-90 .framed-text {
+    transform: translateX(calc(-9000% - 5400px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-91 .framed-text {
+    transform: translateX(calc(-9100% - 5460px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-92 .framed-text {
+    transform: translateX(calc(-9200% - 5520px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-93 .framed-text {
+    transform: translateX(calc(-9300% - 5580px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-94 .framed-text {
+    transform: translateX(calc(-9400% - 5640px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-95 .framed-text {
+    transform: translateX(calc(-9500% - 5700px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-96 .framed-text {
+    transform: translateX(calc(-9600% - 5760px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-97 .framed-text {
+    transform: translateX(calc(-9700% - 5820px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-98 .framed-text {
+    transform: translateX(calc(-9800% - 5880px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-99 .framed-text {
+    transform: translateX(calc(-9900% - 5940px)) !important;
+  }
+
+/* line 294 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+  .sliding-frames.translate-100 .framed-text {
+    transform: translateX(calc(-10000% - 6000px)) !important;
+  }
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-1 .framed-text {
-  transform: translateX(calc(-100% - 60vw));
+  transform: translateX(calc(-100% - 100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-2 .framed-text {
-  transform: translateX(calc(-200% - 120vw));
+  transform: translateX(calc(-200% - 200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-3 .framed-text {
-  transform: translateX(calc(-300% - 180vw));
+  transform: translateX(calc(-300% - 300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-4 .framed-text {
-  transform: translateX(calc(-400% - 240vw));
+  transform: translateX(calc(-400% - 400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-5 .framed-text {
-  transform: translateX(calc(-500% - 300vw));
+  transform: translateX(calc(-500% - 500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-6 .framed-text {
-  transform: translateX(calc(-600% - 360vw));
+  transform: translateX(calc(-600% - 600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-7 .framed-text {
-  transform: translateX(calc(-700% - 420vw));
+  transform: translateX(calc(-700% - 700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-8 .framed-text {
-  transform: translateX(calc(-800% - 480vw));
+  transform: translateX(calc(-800% - 800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-9 .framed-text {
-  transform: translateX(calc(-900% - 540vw));
+  transform: translateX(calc(-900% - 900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-10 .framed-text {
-  transform: translateX(calc(-1000% - 600vw));
+  transform: translateX(calc(-1000% - 1000px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-11 .framed-text {
-  transform: translateX(calc(-1100% - 660vw));
+  transform: translateX(calc(-1100% - 1100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-12 .framed-text {
-  transform: translateX(calc(-1200% - 720vw));
+  transform: translateX(calc(-1200% - 1200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-13 .framed-text {
-  transform: translateX(calc(-1300% - 780vw));
+  transform: translateX(calc(-1300% - 1300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-14 .framed-text {
-  transform: translateX(calc(-1400% - 840vw));
+  transform: translateX(calc(-1400% - 1400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-15 .framed-text {
-  transform: translateX(calc(-1500% - 900vw));
+  transform: translateX(calc(-1500% - 1500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-16 .framed-text {
-  transform: translateX(calc(-1600% - 960vw));
+  transform: translateX(calc(-1600% - 1600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-17 .framed-text {
-  transform: translateX(calc(-1700% - 1020vw));
+  transform: translateX(calc(-1700% - 1700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-18 .framed-text {
-  transform: translateX(calc(-1800% - 1080vw));
+  transform: translateX(calc(-1800% - 1800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-19 .framed-text {
-  transform: translateX(calc(-1900% - 1140vw));
+  transform: translateX(calc(-1900% - 1900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-20 .framed-text {
-  transform: translateX(calc(-2000% - 1200vw));
+  transform: translateX(calc(-2000% - 2000px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-21 .framed-text {
-  transform: translateX(calc(-2100% - 1260vw));
+  transform: translateX(calc(-2100% - 2100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-22 .framed-text {
-  transform: translateX(calc(-2200% - 1320vw));
+  transform: translateX(calc(-2200% - 2200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-23 .framed-text {
-  transform: translateX(calc(-2300% - 1380vw));
+  transform: translateX(calc(-2300% - 2300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-24 .framed-text {
-  transform: translateX(calc(-2400% - 1440vw));
+  transform: translateX(calc(-2400% - 2400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-25 .framed-text {
-  transform: translateX(calc(-2500% - 1500vw));
+  transform: translateX(calc(-2500% - 2500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-26 .framed-text {
-  transform: translateX(calc(-2600% - 1560vw));
+  transform: translateX(calc(-2600% - 2600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-27 .framed-text {
-  transform: translateX(calc(-2700% - 1620vw));
+  transform: translateX(calc(-2700% - 2700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-28 .framed-text {
-  transform: translateX(calc(-2800% - 1680vw));
+  transform: translateX(calc(-2800% - 2800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-29 .framed-text {
-  transform: translateX(calc(-2900% - 1740vw));
+  transform: translateX(calc(-2900% - 2900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-30 .framed-text {
-  transform: translateX(calc(-3000% - 1800vw));
+  transform: translateX(calc(-3000% - 3000px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-31 .framed-text {
-  transform: translateX(calc(-3100% - 1860vw));
+  transform: translateX(calc(-3100% - 3100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-32 .framed-text {
-  transform: translateX(calc(-3200% - 1920vw));
+  transform: translateX(calc(-3200% - 3200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-33 .framed-text {
-  transform: translateX(calc(-3300% - 1980vw));
+  transform: translateX(calc(-3300% - 3300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-34 .framed-text {
-  transform: translateX(calc(-3400% - 2040vw));
+  transform: translateX(calc(-3400% - 3400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-35 .framed-text {
-  transform: translateX(calc(-3500% - 2100vw));
+  transform: translateX(calc(-3500% - 3500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-36 .framed-text {
-  transform: translateX(calc(-3600% - 2160vw));
+  transform: translateX(calc(-3600% - 3600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-37 .framed-text {
-  transform: translateX(calc(-3700% - 2220vw));
+  transform: translateX(calc(-3700% - 3700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-38 .framed-text {
-  transform: translateX(calc(-3800% - 2280vw));
+  transform: translateX(calc(-3800% - 3800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-39 .framed-text {
-  transform: translateX(calc(-3900% - 2340vw));
+  transform: translateX(calc(-3900% - 3900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-40 .framed-text {
-  transform: translateX(calc(-4000% - 2400vw));
+  transform: translateX(calc(-4000% - 4000px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-41 .framed-text {
-  transform: translateX(calc(-4100% - 2460vw));
+  transform: translateX(calc(-4100% - 4100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-42 .framed-text {
-  transform: translateX(calc(-4200% - 2520vw));
+  transform: translateX(calc(-4200% - 4200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-43 .framed-text {
-  transform: translateX(calc(-4300% - 2580vw));
+  transform: translateX(calc(-4300% - 4300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-44 .framed-text {
-  transform: translateX(calc(-4400% - 2640vw));
+  transform: translateX(calc(-4400% - 4400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-45 .framed-text {
-  transform: translateX(calc(-4500% - 2700vw));
+  transform: translateX(calc(-4500% - 4500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-46 .framed-text {
-  transform: translateX(calc(-4600% - 2760vw));
+  transform: translateX(calc(-4600% - 4600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-47 .framed-text {
-  transform: translateX(calc(-4700% - 2820vw));
+  transform: translateX(calc(-4700% - 4700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-48 .framed-text {
-  transform: translateX(calc(-4800% - 2880vw));
+  transform: translateX(calc(-4800% - 4800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-49 .framed-text {
-  transform: translateX(calc(-4900% - 2940vw));
+  transform: translateX(calc(-4900% - 4900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-50 .framed-text {
-  transform: translateX(calc(-5000% - 3000vw));
+  transform: translateX(calc(-5000% - 5000px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-51 .framed-text {
-  transform: translateX(calc(-5100% - 3060vw));
+  transform: translateX(calc(-5100% - 5100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-52 .framed-text {
-  transform: translateX(calc(-5200% - 3120vw));
+  transform: translateX(calc(-5200% - 5200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-53 .framed-text {
-  transform: translateX(calc(-5300% - 3180vw));
+  transform: translateX(calc(-5300% - 5300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-54 .framed-text {
-  transform: translateX(calc(-5400% - 3240vw));
+  transform: translateX(calc(-5400% - 5400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-55 .framed-text {
-  transform: translateX(calc(-5500% - 3300vw));
+  transform: translateX(calc(-5500% - 5500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-56 .framed-text {
-  transform: translateX(calc(-5600% - 3360vw));
+  transform: translateX(calc(-5600% - 5600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-57 .framed-text {
-  transform: translateX(calc(-5700% - 3420vw));
+  transform: translateX(calc(-5700% - 5700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-58 .framed-text {
-  transform: translateX(calc(-5800% - 3480vw));
+  transform: translateX(calc(-5800% - 5800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-59 .framed-text {
-  transform: translateX(calc(-5900% - 3540vw));
+  transform: translateX(calc(-5900% - 5900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-60 .framed-text {
-  transform: translateX(calc(-6000% - 3600vw));
+  transform: translateX(calc(-6000% - 6000px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-61 .framed-text {
-  transform: translateX(calc(-6100% - 3660vw));
+  transform: translateX(calc(-6100% - 6100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-62 .framed-text {
-  transform: translateX(calc(-6200% - 3720vw));
+  transform: translateX(calc(-6200% - 6200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-63 .framed-text {
-  transform: translateX(calc(-6300% - 3780vw));
+  transform: translateX(calc(-6300% - 6300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-64 .framed-text {
-  transform: translateX(calc(-6400% - 3840vw));
+  transform: translateX(calc(-6400% - 6400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-65 .framed-text {
-  transform: translateX(calc(-6500% - 3900vw));
+  transform: translateX(calc(-6500% - 6500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-66 .framed-text {
-  transform: translateX(calc(-6600% - 3960vw));
+  transform: translateX(calc(-6600% - 6600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-67 .framed-text {
-  transform: translateX(calc(-6700% - 4020vw));
+  transform: translateX(calc(-6700% - 6700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-68 .framed-text {
-  transform: translateX(calc(-6800% - 4080vw));
+  transform: translateX(calc(-6800% - 6800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-69 .framed-text {
-  transform: translateX(calc(-6900% - 4140vw));
+  transform: translateX(calc(-6900% - 6900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-70 .framed-text {
-  transform: translateX(calc(-7000% - 4200vw));
+  transform: translateX(calc(-7000% - 7000px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-71 .framed-text {
-  transform: translateX(calc(-7100% - 4260vw));
+  transform: translateX(calc(-7100% - 7100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-72 .framed-text {
-  transform: translateX(calc(-7200% - 4320vw));
+  transform: translateX(calc(-7200% - 7200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-73 .framed-text {
-  transform: translateX(calc(-7300% - 4380vw));
+  transform: translateX(calc(-7300% - 7300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-74 .framed-text {
-  transform: translateX(calc(-7400% - 4440vw));
+  transform: translateX(calc(-7400% - 7400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-75 .framed-text {
-  transform: translateX(calc(-7500% - 4500vw));
+  transform: translateX(calc(-7500% - 7500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-76 .framed-text {
-  transform: translateX(calc(-7600% - 4560vw));
+  transform: translateX(calc(-7600% - 7600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-77 .framed-text {
-  transform: translateX(calc(-7700% - 4620vw));
+  transform: translateX(calc(-7700% - 7700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-78 .framed-text {
-  transform: translateX(calc(-7800% - 4680vw));
+  transform: translateX(calc(-7800% - 7800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-79 .framed-text {
-  transform: translateX(calc(-7900% - 4740vw));
+  transform: translateX(calc(-7900% - 7900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-80 .framed-text {
-  transform: translateX(calc(-8000% - 4800vw));
+  transform: translateX(calc(-8000% - 8000px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-81 .framed-text {
-  transform: translateX(calc(-8100% - 4860vw));
+  transform: translateX(calc(-8100% - 8100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-82 .framed-text {
-  transform: translateX(calc(-8200% - 4920vw));
+  transform: translateX(calc(-8200% - 8200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-83 .framed-text {
-  transform: translateX(calc(-8300% - 4980vw));
+  transform: translateX(calc(-8300% - 8300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-84 .framed-text {
-  transform: translateX(calc(-8400% - 5040vw));
+  transform: translateX(calc(-8400% - 8400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-85 .framed-text {
-  transform: translateX(calc(-8500% - 5100vw));
+  transform: translateX(calc(-8500% - 8500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-86 .framed-text {
-  transform: translateX(calc(-8600% - 5160vw));
+  transform: translateX(calc(-8600% - 8600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-87 .framed-text {
-  transform: translateX(calc(-8700% - 5220vw));
+  transform: translateX(calc(-8700% - 8700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-88 .framed-text {
-  transform: translateX(calc(-8800% - 5280vw));
+  transform: translateX(calc(-8800% - 8800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-89 .framed-text {
-  transform: translateX(calc(-8900% - 5340vw));
+  transform: translateX(calc(-8900% - 8900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-90 .framed-text {
-  transform: translateX(calc(-9000% - 5400vw));
+  transform: translateX(calc(-9000% - 9000px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-91 .framed-text {
-  transform: translateX(calc(-9100% - 5460vw));
+  transform: translateX(calc(-9100% - 9100px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-92 .framed-text {
-  transform: translateX(calc(-9200% - 5520vw));
+  transform: translateX(calc(-9200% - 9200px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-93 .framed-text {
-  transform: translateX(calc(-9300% - 5580vw));
+  transform: translateX(calc(-9300% - 9300px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-94 .framed-text {
-  transform: translateX(calc(-9400% - 5640vw));
+  transform: translateX(calc(-9400% - 9400px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-95 .framed-text {
-  transform: translateX(calc(-9500% - 5700vw));
+  transform: translateX(calc(-9500% - 9500px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-96 .framed-text {
-  transform: translateX(calc(-9600% - 5760vw));
+  transform: translateX(calc(-9600% - 9600px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-97 .framed-text {
-  transform: translateX(calc(-9700% - 5820vw));
+  transform: translateX(calc(-9700% - 9700px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-98 .framed-text {
-  transform: translateX(calc(-9800% - 5880vw));
+  transform: translateX(calc(-9800% - 9800px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-99 .framed-text {
-  transform: translateX(calc(-9900% - 5940vw));
+  transform: translateX(calc(-9900% - 9900px));
 }
+
+/* line 299 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
 .sliding-frames.translate-100 .framed-text {
-  transform: translateX(calc(-10000% - 6000vw));
+  transform: translateX(calc(-10000% - 10000px));
 }
+
+/* line 102 : E:\dev\psyllabus\altered-forest\src\styles\components.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
 .main-screen {
   text-align: center;
   margin-bottom: 90px;
 }
-.main-screen .logo {
+
+/* line 5 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+.main-screen .title {
   background-image: url("../images/title.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -921,107 +2453,226 @@ a.framed-text h2 {
   background-color: transparent;
   height: calc(50vh - 120px);
 }
+
+/* line 13 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
 .main-screen .event-details-container {
   z-index: -10;
   height: 50vh;
   position: relative;
 }
+
+/* line 18 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
 .main-screen .event-details {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+  text-shadow: 0px 0px 50px #000, 1px 1px 20px #000, 2px 2px 10px #000;
 }
+
+/* line 25 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
 .main-screen .event-details .date {
   font-size: 300%;
 }
-.main-screen .event-details .date,
-.main-screen .event-details .location {
-  text-shadow: 0px 0px 50px #000, 1px 1px 20px #000, 2px 2px 10px #000;
-}
+
+/* line 28 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
 .main-screen .event-details .countdown {
   margin-top: 50px;
 }
+
+/* line 30 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
 .main-screen .event-details .countdown .component {
   display: inline-block;
   margin: 20px 5vw;
 }
+
+/* line 34 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
 .main-screen .event-details .countdown .component .count {
   display: block;
   font-size: 300%;
   margin-bottom: 5px;
 }
+
+/* line 39 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
 .main-screen .vision {
   min-height: calc(55vh - 67px - 120px);
 }
+
+/* line 42 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+.main-screen .vision img.framed-image {
+  height: 440px;
+  margin-top: -75px;
+  -webkit-shape-outside: polygon(50% 0%, 50% 0%, 105% 100%, 0% 100%);
+  shape-outside: polygon(50% 0%, 50% 0%, 105% 100%, 0% 100%);
+}
 @media (max-width: 1320px) {
+
+/* line 49 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+
+/* line 50 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
   .main-screen .event-details .date {
     font-size: 200%;
   }
+
+/* line 52 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
   .main-screen .event-details .location {
     font-size: 150%;
   }
+
+/* line 54 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+
+/* line 56 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+  .framed-text.left.vision img.framed-image,
+  .framed-text.right.vision img.framed-image {
+    height: 440px;
+    margin-top: -120px;
+    -webkit-shape-outside: polygon(50% 0%, 50% 0%, 105% 100%, 0% 100%);
+    shape-outside: polygon(50% 0%, 50% 0%, 105% 100%, 0% 100%);
+    float: left;
+  }
+}
+@media (max-width: 1100px) {
+
+/* line 64 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+
+/* line 66 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+  .framed-text.left.vision img.framed-image,
+  .framed-text.right.vision img.framed-image {
+    height: 310px;
+    margin-top: -45px;
+  }
 }
 @media (max-width: 850px) {
+
+/* line 71 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
   .countdown {
     margin-right: -25px;
     margin-left: -25px;
   }
+
+/* line 75 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
   .countdown span.component {
     margin: 20px 3vw !important;
   }
 }
 @media (max-width: 600px) {
-  .main-screen .logo {
+
+/* line 79 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+
+/* line 81 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+  .framed-text.left.vision img.framed-image,
+  .framed-text.right.vision img.framed-image {
+    height: 440px;
+    margin-top: -120px;
+  }
+
+/* line 85 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+
+/* line 86 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+  .main-screen .title {
     height: 40vh;
   }
+
+/* line 89 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
   .main-screen .event-details-container {
     height: 50vh;
   }
+
+/* line 92 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+
+/* line 93 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
   .main-screen .event-details-container .event-details .date {
     font-size: 200%;
   }
+
+/* line 95 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
   .main-screen .event-details-container .event-details .location {
     font-size: 150%;
   }
+
+/* line 98 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
   .main-screen .event-details-container .event-details .countdown {
     margin-top: 10px;
   }
+
+/* line 101 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
   .main-screen .event-details-container .event-details .countdown .component span.count {
     font-size: 220%;
   }
 }
+
+/* line 24 : E:\dev\psyllabus\altered-forest\src\styles\home.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\performers.styl */
+
+/* line 2 : E:\dev\psyllabus\altered-forest\src\styles\performers.styl */
+
+/* line 3 : E:\dev\psyllabus\altered-forest\src\styles\performers.styl */
 .performers .intro-container {
   min-height: 20vh;
   margin-bottom: 50px;
 }
+
+/* line 7 : E:\dev\psyllabus\altered-forest\src\styles\performers.styl */
 .performers .intro-container .center {
   width: 100%;
 }
 @media (max-width: 850px) {
+
+/* line 15 : E:\dev\psyllabus\altered-forest\src\styles\performers.styl */
+
+/* line 16 : E:\dev\psyllabus\altered-forest\src\styles\performers.styl */
   .performers .intro-container {
     margin-bottom: 50px;
   }
+
+/* line 19 : E:\dev\psyllabus\altered-forest\src\styles\performers.styl */
   .performers .intro-container .center {
     width: 100%;
   }
 }
+
+/* line 22 : E:\dev\psyllabus\altered-forest\src\styles\performers.styl */
+
+/* line 9 : E:\dev\psyllabus\altered-forest\src\styles\performers.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\location.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\location.styl */
+
+/* line 2 : E:\dev\psyllabus\altered-forest\src\styles\location.styl */
 .location .sub-album {
   white-space: nowrap;
   height: 100%;
   overflow: hidden;
 }
+
+/* line 7 : E:\dev\psyllabus\altered-forest\src\styles\location.styl */
 .location .sub-album-text {
   margin: 25px 0;
   padding-bottom: 15px;
 }
+
+/* line 126 : E:\dev\psyllabus\altered-forest\src\styles\location.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 2 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 3 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery .intro-container {
   min-height: 15vh;
   margin-bottom: 50px;
 }
+
+/* line 7 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery .intro-container .center {
   width: 100%;
 }
+
+/* line 10 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 13 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album,
 .location ul.album,
 .gallery ul.sub-album,
@@ -1030,6 +2681,8 @@ a.framed-text h2 {
   margin-bottom: 0;
   padding-left: 15px;
 }
+
+/* line 18 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album > li,
 .location ul.album > li,
 .gallery ul.sub-album > li,
@@ -1040,6 +2693,8 @@ a.framed-text h2 {
   margin-right: 15px;
   list-style: outside none none;
 }
+
+/* line 24 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album > li a,
 .location ul.album > li a,
 .gallery ul.sub-album > li a,
@@ -1052,6 +2707,8 @@ a.framed-text h2 {
   float: left;
   line-height: 0;
 }
+
+/* line 33 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album > li a > img,
 .location ul.album > li a > img,
 .gallery ul.sub-album > li a > img,
@@ -1065,6 +2722,10 @@ a.framed-text h2 {
   height: 100%;
   width: 100%;
 }
+
+/* line 43 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 44 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album > li a:hover > img,
 .location ul.album > li a:hover > img,
 .gallery ul.sub-album > li a:hover > img,
@@ -1072,18 +2733,24 @@ a.framed-text h2 {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
   transform: scale3d(1.1, 1.1, 1.1);
 }
+
+/* line 47 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album > li a:hover .gallery-content-poster,
 .location ul.album > li a:hover .gallery-content-poster,
 .gallery ul.sub-album > li a:hover .gallery-content-poster,
 .location ul.sub-album > li a:hover .gallery-content-poster {
   background-color: rgba(0,0,0,0.5);
 }
+
+/* line 49 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album > li a:hover .gallery-content-poster > img,
 .location ul.album > li a:hover .gallery-content-poster > img,
 .gallery ul.sub-album > li a:hover .gallery-content-poster > img,
 .location ul.sub-album > li a:hover .gallery-content-poster > img {
   opacity: 1;
 }
+
+/* line 51 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album > li a .gallery-content-poster,
 .location ul.album > li a .gallery-content-poster,
 .gallery ul.sub-album > li a .gallery-content-poster,
@@ -1098,6 +2765,8 @@ a.framed-text h2 {
   -o-transition: background-color 0.15s ease 0s;
   transition: background-color 0.15s ease 0s;
 }
+
+/* line 61 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album > li a .gallery-content-poster > img,
 .location ul.album > li a .gallery-content-poster > img,
 .gallery ul.sub-album > li a .gallery-content-poster > img,
@@ -1112,6 +2781,12 @@ a.framed-text h2 {
   -o-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
 }
+
+/* line 72 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 73 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 74 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album .video .demo-gallery-poster img,
 .location ul.album .video .demo-gallery-poster img,
 .gallery ul.sub-album .video .demo-gallery-poster img,
@@ -1122,6 +2797,14 @@ a.framed-text h2 {
   opacity: 0.8;
   width: 48px;
 }
+
+/* line 80 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 81 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 83 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 84 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 .gallery ul.album.dark > .album > li a,
 .location ul.album.dark > .album > li a,
 .gallery ul.sub-album.dark > .album > li a,
@@ -1133,9 +2816,17 @@ a.framed-text h2 {
   border: 3px solid #04070a;
 }
 @media (max-width: 1320px) {
+
+/* line 89 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 90 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
   .gallery .intro-container {
     min-height: 20vh;
   }
+
+/* line 92 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 94 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
   .gallery .album li.picture,
   .location .album li.picture,
   .gallery .sub-album li.picture,
@@ -1144,9 +2835,17 @@ a.framed-text h2 {
   }
 }
 @media (max-width: 1100px) {
+
+/* line 99 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 100 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
   .gallery .intro-container {
     min-height: 25vh;
   }
+
+/* line 102 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 104 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
   .gallery .album li.picture,
   .location .album li.picture,
   .gallery .sub-album li.picture,
@@ -1155,9 +2854,17 @@ a.framed-text h2 {
   }
 }
 @media (max-width: 850px) {
+
+/* line 109 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 110 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
   .gallery .intro-container {
     min-height: 30vh;
   }
+
+/* line 112 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 114 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
   .gallery .album li.picture,
   .location .album li.picture,
   .gallery .sub-album li.picture,
@@ -1166,9 +2873,17 @@ a.framed-text h2 {
   }
 }
 @media (max-width: 600px) {
+
+/* line 119 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 120 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
   .gallery .intro-container {
     min-height: 40vh;
   }
+
+/* line 122 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 124 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
   .gallery .album li.picture,
   .location .album li.picture,
   .gallery .sub-album li.picture,
@@ -1176,10 +2891,22 @@ a.framed-text h2 {
     width: calc(100% - 15px);
   }
 }
+
+/* line 81 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
+
+/* line 2 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
+
+/* line 3 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .center > h3,
 .contact .center > p {
   text-align: left !important;
 }
+
+/* line 7 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
+
+/* line 9 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .field > label {
   display: block;
   width: 100%;
@@ -1187,6 +2914,8 @@ a.framed-text h2 {
   margin: 15px;
   margin-tip: 50px;
 }
+
+/* line 16 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .field > input {
   width: 100%;
   padding: 10px;
@@ -1195,9 +2924,13 @@ a.framed-text h2 {
   border-color: #191940;
   color: #fff;
 }
+
+/* line 24 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .field > input.error {
   border-color: #f00;
 }
+
+/* line 27 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .field > textarea {
   height: 50vh;
   width: 100%;
@@ -1205,9 +2938,13 @@ a.framed-text h2 {
   border-color: #191940;
   color: #fff;
 }
+
+/* line 34 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .field > textarea.error + div {
   border: 1px solid #f00;
 }
+
+/* line 37 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .ck-editor .ck-content {
   min-height: 50vh;
   color: #000;
@@ -1215,6 +2952,8 @@ a.framed-text h2 {
   border-color: #191940 !important;
   color: #fff;
 }
+
+/* line 43 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .ck-editor .ck-content p,
 .contact .ck-editor .ck-content h1,
 .contact .ck-editor .ck-content h2,
@@ -1223,13 +2962,19 @@ a.framed-text h2 {
 .contact .ck-editor .ck-content h5 {
   font-family: Arial !important;
 }
+
+/* line 45 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .ck-editor .ck-content p {
   font-size: 130%;
 }
+
+/* line 48 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .submit-container {
   margin-top: 25px;
   text-align: right;
 }
+
+/* line 52 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .submit {
   background: #1000f6;
   background-image: -webkit-linear-gradient(top, #1000f6, #000a8f);
@@ -1252,6 +2997,8 @@ a.framed-text h2 {
   display: inline-block;
   cursor: pointer;
 }
+
+/* line 74 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */
 .contact .submit:hover {
   background: #000a8f;
   background-image: -webkit-linear-gradient(top, #000a8f, #1000f6);
@@ -1261,3 +3008,5 @@ a.framed-text h2 {
   background-image: linear-gradient(to bottom, #000a8f, #1000f6);
   text-decoration: none;
 }
+
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\contact.styl */

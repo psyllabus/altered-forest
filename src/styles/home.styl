@@ -2,7 +2,7 @@
     text-align: center
     margin-bottom: 90px
 
-    .logo
+    .title
         background-image: url('../images/title.png')
         background-position: center center
         background-repeat: no-repeat
@@ -20,11 +20,10 @@
         top: 50%
         transform: translateY(-50%)
         width: 100%
+        text-shadow: 0px 0px 50px #000, 1px 1px 20px #000, 2px 2px 10px #000
+
         .date
             font-size: 300%
-        .date
-        .location
-            text-shadow: 0px 0px 50px #000, 1px 1px 20px #000, 2px 2px 10px #000
 
         .countdown
             margin-top: 50px
@@ -40,12 +39,33 @@
     .vision
         min-height: "calc(55vh - %s - %s)" % (FOOTER_HEIGHT CONTENT_MARGIN_TOP)
 
+        img.framed-image
+            height: 440px
+            margin-top: -75px
+            -webkit-shape-outside polygon(50% 0%, 50% 0%, 105% 100%, 0% 100%)
+            shape-outside polygon(50% 0%, 50% 0%, 105% 100%, 0% 100%)
+
 @media TABLET_LANDSCAPE
     .main-screen .event-details
         .date
             font-size: 200%
         .location
             font-size: 150%
+    .framed-text.left.vision
+    .framed-text.right.vision
+        img.framed-image
+            height 440px
+            margin-top: -120px
+            -webkit-shape-outside polygon(50% 0%, 50% 0%, 105% 100%, 0% 100%)
+            shape-outside polygon(50% 0%, 50% 0%, 105% 100%, 0% 100%)
+            float: left
+
+@media TABLET_PORTRAIT
+    .framed-text.left.vision
+    .framed-text.right.vision
+        img.framed-image
+            height 310px
+            margin-top: -45px
 
 @media PHONE_LANDSCAPE
     .countdown
@@ -56,8 +76,14 @@
             margin: 20px 3vw !important
 
 @media PHONE_PORTRAIT
+    .framed-text.left.vision
+    .framed-text.right.vision
+        img.framed-image
+            height 440px
+            margin-top: -120px
+
     .main-screen
-        .logo
+        .title
             height: 40vh
 
         .event-details-container
