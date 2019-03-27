@@ -1,6 +1,7 @@
 .header
   nav.navbar
-    +imgNavItem('logo', '/',  '/images/logos/simplified.png')
+    +imgNavItem('logo', '/',  '/images/logos/final-notext.png')
+    +imgNavItem('logo', 'https://app.etickets.to/buy/?e=17440',  '/images/logos/summer-tide.png', '_blank')
     .spacer
     +dropdownNavItem('performers', '/performers', translate('nav.performers.title'), [
       {link: '/performers/audio', text: translate('nav.performers.audio')},
@@ -25,7 +26,8 @@
     else
       +navItem('francais', '/lang/fr?url=' + url,  'Francais')
   nav.mobile-navbar
-    +imgNavItem('logo', '/',  '/images/logos/simplified.png')
+    +imgNavItem('logo', '/',  '/images/logos/final-notext.png')
+    +imgNavItem('logo', 'https://app.etickets.to/buy/?e=17440',  '/images/logos/summer-tide.png', '_blank')
     .spacer
     .nav-item
       .content

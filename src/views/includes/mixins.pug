@@ -9,10 +9,11 @@ mixin navItem(className, link, text, target)
                 else
                     = 'Placeholder'
 
-mixin imgNavItem(className, link, imgSrc)
+mixin imgNavItem(className, link, imgSrc, target)
     .nav-item.img(class=className)
         .content
-            a.highlight(href=link target=target style="background-image: url(\"" + imgSrc + '")')
+            a.highlight(href=link target=target)
+                span(style="background-image: url(\"" + imgSrc + '")')
 
 mixin dropdownNavItem(className, link, text, dropdown)
     .nav-item

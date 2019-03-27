@@ -105,20 +105,22 @@ apply-background-image(bgOpacity)
 
             &.img > .content
                 height: calc(100% - 20px)
-                padding: 10px 10px
 
                 > .highlight
                     height: 100%
-                    padding: 0px !important
-                    background-position: center center
-                    background-repeat: no-repeat
-                    background-size: contain
-                    background-color: transparent
-                    // As big as the image needs to be, the aspect ratio is preserved by the background-size property
-                    //  as long as the div is wide enough to allow it
-                    width: 50px
-                    // TODO: use logo with properly defined colors
-                    filter: invert(100%)
+                    padding: 10px 10px
+                    > span
+                        display: block
+                        height: 100%
+                        background-position: center center
+                        background-repeat: no-repeat
+                        background-size: contain
+                        background-color: transparent
+                        // As big as the image needs to be, the aspect ratio is preserved by the background-size property
+                        //  as long as the div is wide enough to allow it
+                        width: 50px
+                        // TODO: use logo with properly defined colors
+                        filter: invert(100%)
 
         .dropdown
             position: absolute
@@ -133,6 +135,8 @@ apply-background-image(bgOpacity)
                 transform: translateY(0)
 
             > .content > .highlight
+                background-color: rgba(255, 255, 255, 0.3)
+            &.img > .content
                 background-color: rgba(255, 255, 255, 0.3)
     .navbar
         // the border is partially transparent for some reason and let the dropdown leak behind it

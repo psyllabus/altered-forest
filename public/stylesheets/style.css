@@ -7,7 +7,7 @@
 
 /* line 1 : E:\dev\psyllabus\altered-forest\src\styles\constants.styl */
 
-/* line 336 : E:\dev\psyllabus\altered-forest\src\styles\constants.styl */
+/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\constants.styl */
 
 /* line 1 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @font-face {
@@ -164,14 +164,20 @@ p {
 .header .navbar .nav-item.img > .content,
 .header .mobile-navbar .nav-item.img > .content {
   height: calc(100% - 20px);
-  padding: 10px 10px;
 }
 
-/* line 110 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 109 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item.img > .content > .highlight,
 .header .mobile-navbar .nav-item.img > .content > .highlight {
   height: 100%;
-  padding: 0px !important;
+  padding: 10px 10px;
+}
+
+/* line 112 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+.header .navbar .nav-item.img > .content > .highlight > span,
+.header .mobile-navbar .nav-item.img > .content > .highlight > span {
+  display: block;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -180,7 +186,7 @@ p {
   filter: invert(100%);
 }
 
-/* line 123 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 125 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .dropdown,
 .header .mobile-navbar .dropdown {
   position: absolute;
@@ -195,9 +201,9 @@ p {
   background-color: transparent;
 }
 
-/* line 130 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
-
 /* line 132 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 134 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item:hover .dropdown,
 .header .mobile-navbar .nav-item:hover .dropdown,
 .header .navbar .nav-item:active .dropdown,
@@ -205,7 +211,7 @@ p {
   transform: translateY(0);
 }
 
-/* line 135 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 137 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .nav-item:hover > .content > .highlight,
 .header .mobile-navbar .nav-item:hover > .content > .highlight,
 .header .navbar .nav-item:active > .content > .highlight,
@@ -213,46 +219,54 @@ p {
   background-color: rgba(255,255,255,0.3);
 }
 
-/* line 137 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 139 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+.header .navbar .nav-item:hover.img > .content,
+.header .mobile-navbar .nav-item:hover.img > .content,
+.header .navbar .nav-item:active.img > .content,
+.header .mobile-navbar .nav-item:active.img > .content {
+  background-color: rgba(255,255,255,0.3);
+}
 
 /* line 141 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+
+/* line 145 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .navbar .dropdown > .content:not(:last-child) {
   border-bottom: 1px solid #000;
 }
 
-/* line 144 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 148 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .mobile-navbar {
   display: none;
 }
 
-/* line 146 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 150 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .mobile-navbar .dropdown {
   position: fixed;
   left: 0;
 }
 
-/* line 150 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 154 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .mobile-navbar .dropdown .nav-item {
   display: block;
   width: 100vw;
   text-align: center;
 }
 
-/* line 155 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 159 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .mobile-navbar .dropdown .nav-item:not(:last-child) {
   border-bottom: 1px solid #000;
 }
 
-/* line 157 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 161 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 
-/* line 158 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 162 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 
-/* line 159 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 163 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .header .mobile-navbar .nav-item.img > .content > .highlight {
   width: 50px;
 }
 
-/* line 162 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 166 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .container {
   background-size: cover;
   margin-top: 120px;
@@ -260,7 +274,7 @@ p {
   min-height: calc(100vh - 120px - 67px - 25px);
 }
 
-/* line 168 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 172 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .background {
   width: 100%;
   height: 100%;
@@ -278,13 +292,13 @@ p {
   background-color: transparent;
 }
 
-/* line 179 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 183 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .main-content {
   width: 1200px;
   margin: auto;
 }
 
-/* line 183 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 187 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .footer {
   text-align: center;
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../images/background.jpg");
@@ -302,21 +316,21 @@ p {
   justify-content: center;
 }
 
-/* line 194 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 198 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 
-/* line 195 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 199 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .footer .social a {
   color: #fff;
 }
 
-/* line 197 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 201 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .footer .social span {
   padding: 0 10px;
   margin: 0 5px;
   font-size: 25px;
 }
 
-/* line 215 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 219 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .scroll-hint {
   font-size: 50px;
   position: fixed;
@@ -328,7 +342,7 @@ p {
   transition: opacity 0.5s linear;
 }
 
-/* line 225 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 229 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .scroll-hint span {
   opacity: 0;
   animation-name: fading-light;
@@ -338,44 +352,44 @@ p {
   animation-iteration-count: infinite;
 }
 
-/* line 229 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 233 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .scroll-hint.scrolled {
   opacity: 0 !important;
 }
 
-/* line 232 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 236 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .construction {
   height: calc(100vh - 120px - 67px);
 }
 
-/* line 235 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 239 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .hidden {
   display: none;
 }
 
-/* line 238 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 242 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .center {
   text-align: center;
 }
 
-/* line 241 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 245 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .vertical-center {
   position: relative;
 }
 
-/* line 244 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 248 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .vertical-center > div {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 249 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 253 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .intro-container {
   margin-bottom: 80px;
 }
 
-/* line 252 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 256 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .flashMessage {
   position: fixed;
   top: 0;
@@ -389,19 +403,19 @@ p {
   background-color: transparent;
 }
 
-/* line 259 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 263 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .flashMessage.error {
   background-image: linear-gradient(rgba(180,0,0,0.8), rgba(180,0,0,0.8)), url("../images/background.jpg");
 }
 
-/* line 262 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 266 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .flashMessage > p {
   margin-right: 25px;
   margin-left: 25px;
   font-size: 130% !important;
 }
 
-/* line 267 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 271 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 .flashMessage > #close {
   font-size: 150%;
   position: fixed;
@@ -411,19 +425,19 @@ p {
 }
 @media (max-width: 1320px) {
 
-/* line 275 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 279 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .main-content {
     max-width: calc(100% - 200px);
   }
 
-/* line 277 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 281 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 
-/* line 278 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 282 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar {
     font-size: 125% !important;
   }
 
-/* line 280 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 284 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar .highlight {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -431,40 +445,40 @@ p {
 }
 @media (max-width: 1100px) {
 
-/* line 286 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 290 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .main-content {
     max-width: calc(100% - 100px);
   }
 
-/* line 288 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 292 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 
-/* line 289 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 293 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar {
     font-size: 110% !important;
   }
 
-/* line 291 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 295 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar .highlight {
     letter-spacing: 0.5px;
     padding-right: 10px !important;
     padding-left: 10px !important;
   }
 
-/* line 296 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 300 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar.logo.img > .content > .highlight {
     width: 40px;
   }
 }
 @media (max-width: 850px) {
 
-/* line 301 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 305 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 
-/* line 302 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 306 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar {
     font-size: 90% !important;
   }
 
-/* line 304 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 308 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar .highlight {
     padding-right: 5px !important;
     padding-left: 5px !important;
@@ -472,142 +486,142 @@ p {
 }
 @media (max-width: 600px) {
 
-/* line 309 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 313 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .main-content {
     max-width: calc(100% - 50px);
   }
 
-/* line 312 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 316 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 
-/* line 313 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 317 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .header .navbar {
     display: none !important;
   }
 
-/* line 316 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 320 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .mobile-navbar {
     display: flex !important;
     font-size: 130% !important;
   }
 
-/* line 320 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 324 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .container {
     margin-top: 60px;
   }
 
-/* line 323 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 327 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   .intro-container {
     margin-bottom: 40px;
   }
 }
 
-/* line 326 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 330 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-moz-keyframes fading-light {
 
-/* line 327 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 331 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 0.6;
   }
 
-/* line 329 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 333 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0;
   }
 }
 
-/* line 326 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 330 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-webkit-keyframes fading-light {
 
-/* line 327 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 331 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 0.6;
   }
 
-/* line 329 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 333 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0;
   }
 }
 
-/* line 326 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 330 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-o-keyframes fading-light {
 
-/* line 327 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 331 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 0.6;
   }
 
-/* line 329 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 333 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0;
   }
 }
 
-/* line 326 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 330 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @keyframes fading-light {
 
-/* line 327 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 331 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 0.6;
   }
 
-/* line 329 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 333 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0;
   }
 }
 
-/* line 332 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 336 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-moz-keyframes fading-light-on {
 
-/* line 333 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 337 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 1;
   }
 
-/* line 335 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 339 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0.4;
   }
 }
 
-/* line 332 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 336 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-webkit-keyframes fading-light-on {
 
-/* line 333 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 337 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 1;
   }
 
-/* line 335 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 339 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0.4;
   }
 }
 
-/* line 332 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 336 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @-o-keyframes fading-light-on {
 
-/* line 333 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 337 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 1;
   }
 
-/* line 335 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 339 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0.4;
   }
 }
 
-/* line 332 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 336 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
 @keyframes fading-light-on {
 
-/* line 333 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 337 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   100% {
     opacity: 1;
   }
 
-/* line 335 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
+/* line 339 : E:\dev\psyllabus\altered-forest\src\styles\layout.styl */
   0% {
     opacity: 0.4;
   }
@@ -2689,7 +2703,7 @@ a.framed-text h2 {
   width: calc(50% - 15px);
 }
 
-/* line 1 : E:\dev\psyllabus\altered-forest\src\styles\location.styl */
+/* line 135 : E:\dev\psyllabus\altered-forest\src\styles\location.styl */
 
 /* line 1 : E:\dev\psyllabus\altered-forest\src\styles\gallery.styl */
 
