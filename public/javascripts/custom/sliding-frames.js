@@ -46,7 +46,7 @@ $(function () {
 
         var currentSlide = getCurrentSlide();
         setTimeout(function () {
-            $el.removeClass('translate-' + currentSlide);
+            $el.addClass('translate-0').removeClass('translate-' + currentSlide);
             hideIrrelevantControls()
             $prevControl.click(getOnClickControlHandler("previous"));
             $nextControl.click(getOnClickControlHandler('next'));

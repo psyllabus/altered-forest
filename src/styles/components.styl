@@ -272,8 +272,6 @@ FRAME_MARGIN_PHONE = 30px
         // min-height inherit
 
         img.framed-image
-            margin-left -20px !important
-            margin-right -20px !important
             height auto !important
             width calc(100vw - 60px) !important
             height: auto
@@ -294,7 +292,12 @@ FRAME_MARGIN_PHONE = 30px
         > .next
             padding-left 10vw
 
-    for num in (1..SLIDING_FRAMES_MAX_NB)
+        .framed-text img.framed-image
+            margin-left -20px !important
+            margin-right -20px !important
+
+
+    for num in (0..SLIDING_FRAMES_MAX_NB)
         .sliding-frames.translate-{num}
             .framed-text
                 transform translateX("calc(%s - %s)" % (num * -100% num * FRAME_MARGIN_PHONE * 2 + 15px)) !important
