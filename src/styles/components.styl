@@ -275,7 +275,7 @@ FRAME_MARGIN_PHONE = 30px
             margin-left -20px !important
             margin-right -20px !important
             height auto !important
-            width calc(100vw - 70px) !important
+            width calc(100vw - 60px) !important
             height: auto
             margin-bottom 20px !important
             shape-outside none !important
@@ -297,7 +297,7 @@ FRAME_MARGIN_PHONE = 30px
     for num in (1..SLIDING_FRAMES_MAX_NB)
         .sliding-frames.translate-{num}
             .framed-text
-                transform translateX("calc(%s - %s)" % (num * -100% num * FRAME_MARGIN_PHONE * 2)) !important
+                transform translateX("calc(%s - %s)" % (num * -100% num * FRAME_MARGIN_PHONE * 2 + 15px)) !important
 
 for num in (1..SLIDING_FRAMES_MAX_NB)
     .sliding-frames.translate-{num}
