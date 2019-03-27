@@ -32,11 +32,11 @@ mixin _framedContent(image)
 
 mixin framedContent(image, side, link)
     if link
-        a.framed-text(href=link class!=(attributes.class || '') + (side && side === 'right' ? ' right' : ' left'))
+        a.framed-text(href=link class!=(attributes.class || '') + (side && ' ' + side || ''))
             +_framedContent(image, side)
                 block
     else
-        .framed-text(class!=(attributes.class || '') + (side && side === 'right' ? ' right' : ' left'))
+        .framed-text(class!=(attributes.class || '') + (side && ' ' + side || ''))
             +_framedContent(image, side)
                 block
 
@@ -48,6 +48,13 @@ mixin linkedPage(image, link, target, showLink)
                 block
                 if showLink
                     p.link= link
+
+mixin articleBlock(image)
+    .article
+        div.image(style="background-image: url('" + image + "')")
+        .text-container
+            .text-content
+                block
 
 mixin slidingFrames(position)
     .sliding-frames(class=((attributes.class || '') + position ? ' translate-' + (position - 1) : ''))
@@ -90,9 +97,10 @@ mixin video(link, thumbnail, title, comment)
     - var subcontent = ''
     - if (title) { subcontent = '<h4>' + title + '</h4>'; }
     - if (comment) { subcontent = (subcontent || '') + '<p>' + comment + '</p>'; }
-    li.picture(data-src=link data-sub-html=subcontent)
+    li.picture.video(data-src=link data-sub-html=subcontent)
         a(href=link data-poster=thumbnail)
             img.img-responsive(src=thumbnail)
+            i.far.fa-play-circle.play-icon
 
 mixin scrollHint()
     .scroll-hint

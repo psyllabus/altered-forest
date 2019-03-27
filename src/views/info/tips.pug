@@ -1,1 +1,35 @@
-extends ../construction
+extends ../layout
+
+block content
+    .info
+        .intro-container
+            .center
+                h1.with-shadows= translate('nav.info.tips')
+        +articleBlock('/images/tips.jpg')
+            h2= translate('info.tips.wellness.title')
+
+            h3= translate('info.tips.wellness.positivity.title')
+            p= translate('info.tips.wellness.positivity.paragraph')
+
+            h3= translate('info.tips.wellness.safeSpace.title')
+            p= translate('info.tips.wellness.safeSpace.paragraph1')
+
+            p
+                strong= translate('info.tips.wellness.safeSpace.strong')
+                | &nbsp;
+                span= translate('info.tips.wellness.safeSpace.paragraph2')
+
+            h3= translate('info.tips.wellness.firstAid.title')
+            p= translate('info.tips.wellness.firstAid.paragraph1')
+            p= translate('info.tips.wellness.firstAid.paragraph2')
+
+            h1.center ✶☾☼
+
+            h2= translate('info.tips.safety.title')
+
+            p= translate('info.tips.safety.paragraph1')
+            p= translate('info.tips.safety.paragraph2')
+            p= translate('info.tips.safety.paragraph3')
+            p= translate('info.tips.safety.paragraph4')
+            p= translate('info.tips.safety.paragraph5')
+            p= translate('info.tips.safety.paragraph6')

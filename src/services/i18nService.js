@@ -105,7 +105,7 @@ var translations = {
     gallery: {
         title: { _ref: 'nav.gallery' },
         albums: {
-            'af2018-alex': {
+            'af2018': {
                 title: { en: 'Altered Forest 2018' },
                 descriptionP1: { en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cumque aspernatur nemo natus itaque earum nam perspiciatis vel deleniti, vitae illum rem. Odio earum incidunt cupiditate quae laborum ipsam veniam! lorem" },
                 descriptionP2: { en: 'Doloremque distinctio ipsam quibusdam ratione beatae sit consequatur voluptas repellat, voluptate quas quidem consequuntur, minima at modi. Minima natus nulla quas doloribus.' }
@@ -120,6 +120,68 @@ var translations = {
     },
     info: {
         title: { _ref: 'nav.info.title' },
+        tips: {
+            wellness: {
+                title: { en: 'SAFETY & WELLNESS', fr: 'SÉCURITÉ ET BIEN-ÊTRE'},
+                positivity: {
+                    title: { en: 'Inclusivity & Positivity', fr: 'Inclusivité et positivité' },
+                    paragraph: {
+                        en: 'The Altered Forest is a happy place that welcomes everyone. We have zero tolerance for Sexism, Racism, Homophobia, Transphobia, Harassment, Ableism, or General Hatefulness of any kind. People come to have festivals to have fun, not to be made to feel unsafe or marginalized. So don’t be a jerk, or else you’ll be asked to leave.',
+                        fr: ''
+                    }
+                },
+                safeSpace: {
+                    title: { en: 'Safe Space', fr: 'Espace sécurisé' },
+                    paragraph1: {
+                        en: 'The Psytribe is a safe community, and we want to keep it that way! Each Altered Forest team member will be easily identifiable & available to help you in the event that you feel unsafe. We will be there to listen, to offer a safe physical space, or to simply hang out with you for a while.',
+                        fr: ''
+                    },
+                    strong: { en: 'MAKE NO MISTAKE: ', fr: 'QUE CECI SOIT CLAIR: ' },
+                    paragraph2: {
+                        en: 'Predatory behaviour of any kind will not be tolerated. Gross people will be asked to leave or will be physically removed if necessary.',
+                        fr: ''
+                    }
+                },
+                firstAid: {
+                    title: { en: 'First Aid / Naloxone', fr: 'Premiers secours / naloxone' },
+                    paragraph1: {
+                        en: 'Altered Forest staff are trained in First Aid as well as Naloxone. We will have both medical aid kits as well as Naloxone kits on site at the event to ensure we have the safest, most amazing time possible! We’re ready for all your nicks and bruises, just in case something more serious happens, civilization is not far away!',
+                        fr: ''
+                    },
+                    paragraph2: {
+                        en: 'Help us further improve the wellness of the event by Educating yourself about the Dangers of Fentanyl. Stop Overdose Ottawa is a great resource to learn just how prevalent and deadly Fentanyl is. Before joining us for the festival, why not give this website on overdose prevention a read? If all of us are educated about the warning signs, the safer we’ll all be.',
+                        fr: ''
+                    }
+                }
+            },
+            safety: {
+                title: { en: 'General Safety', fr: 'Sécurité générale' },
+                paragraph1: {
+                    en: 'Earplugs = Ear Peace! Things will get loud! Make sure to give your ears the love they deserve.',
+                    fr: ''
+                },
+                paragraph2: {
+                    en: 'Watch your feet in the Woods! Don’t let a stubbed toe or cut ankle get in the way of your dancing! Careful where you  step and wear footwear when possible!',
+                    fr: ''
+                },
+                paragraph3: {
+                    en: 'Be Careful When Swimming! Taking a dip is encouraged, but make sure to do so safely! Don’t swim alone, and if you feel a little tipsy, maybe stick to the shallow end, yeah?',
+                    fr: ''
+                },
+                paragraph4: {
+                    en: 'Ticks are in Season! We’re out in the woods after all! Make sure to watch for ticks, and wear protection when you can!',
+                    fr: ''
+                },
+                paragraph5: {
+                    en: 'The Sun will Burn! And it takes no prisoners! Protect your skin with sunscreen!',
+                    fr: ''
+                },
+                paragraph6: {
+                    en: 'Drink Lots of Water! It’s Summer, silly! Make sure to stay hydrated to regulate your temperature and keep your dance feet movin!',
+                    fr: ''
+                }
+            }
+        },
         applications: {
             title: { _ref: 'nav.info.applications' },
             music: {

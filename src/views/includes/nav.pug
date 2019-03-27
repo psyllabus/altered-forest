@@ -9,7 +9,10 @@
     ])
     +navItem('news', '/news',  translate('nav.news'))
     +navItem('location', '/location',  translate('nav.location'))
-    +navItem('gallery', '/gallery',  translate('nav.gallery'))
+    //- +navItem('gallery', '/gallery',  translate('nav.gallery'))
+    +dropdownNavItem('gallery', '/gallery', translate('nav.gallery'), [
+      {link: '/gallery/af2018', text: translate('gallery.albums.af2018.title')},
+    ])
     +dropdownNavItem('info', '/info', translate('nav.info.title'), [
       {link: '/info/tips', text: translate('nav.info.tips')},
       {link: '/info/camping', text: translate('nav.info.camping')},

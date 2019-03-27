@@ -1,10 +1,10 @@
 extends ../layout
 
 block content
-    .info
+    .applications
         .intro-container
             .center
-                h1= translate('info.applications.title')
+                h1.with-shadows= translate('info.applications.title')
         .links
             +linkedPage('/images/music.jpg', 'https://docs.google.com/forms/d/e/1FAIpQLScGWJBg-F-ErEYoyvhM3vegKbX-k8e4qDYXVQUzXVmxRzOmCg/viewform', '_blank', true)(class="music")
                 h3= translate('info.applications.music.title')

@@ -10,9 +10,13 @@ block content
     .location
         .intro-container
             .center
-                h1
+                h1.with-shadows
                     +translate('location.title')
-                h2 Duclos, Quebec, Canada
+                h2.with-shadows Duclos, Quebec, Canada
+
+        .directions
+            iframe(src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d178809.23798097487!2d-76.0491723433368!3d45.552450944500656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C+ON!3m2!1d45.4215296!2d-75.69719309999999!4m5!1s0x4cd1ba1e27db249d%3A0xb18334f6665b780f!2sDuclos%2C+QC+J0X+1S0!3m2!1d45.68626!2d-76.12113099999999!5e0!3m2!1sen!2sca!4v1553651332138" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+
         .album
             ul.sub-album
                 +picture("https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/36587789_1928402423871651_1471174019985178624_o.jpg?_nc_cat=105&_nc_ht=scontent.fybz1-1.fna&oh=854bd5db475442e799b764aa01a8eeec&oe=5CF6E776", "Some Title", "Some Comment")

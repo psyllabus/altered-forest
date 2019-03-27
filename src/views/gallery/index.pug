@@ -16,17 +16,11 @@ block content
     .gallery
         .intro-container.vertical-center
             .center
-                h1
+                h1.with-shadows
                     +translate('gallery.title')
 
-        +slidingFrames()
-            +framedContent("/images/framed-pic-sample-2.png", 'left', '/gallery/af2018-alex')(class="alex-gallery")
-                h2
-                    +translate('gallery.albums.af2018-alex.title')
-                p
-                    +translate('gallery.albums.af2018-alex.descriptionP1')
-                p
-                    +translate('gallery.albums.af2018-alex.descriptionP2')
+        +linkedPage('/images/tips.jpg', '/gallery/af2018')
+            h3= translate('gallery.albums.af2018.title')
 
 
 block scripts

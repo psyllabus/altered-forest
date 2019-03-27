@@ -19,13 +19,15 @@
 
     img.framed-image
         height 300px
-        -webkit-shape-outside polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%)
-        shape-outside polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%)
+        shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
+        -webkit-shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
+
         margin-bottom 10px
 
-        &.inverted
-            shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
-            -webkit-shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
+    &.right
+        img.framed-image
+            shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 45% 100%)
+            -webkit-shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 45% 100%)
 
     &.left img.framed-image
         float left
@@ -67,14 +69,10 @@
 
 
     &.inverted
+    &.right.inverted
         img.framed-image
-            shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
-            -webkit-shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%)
-
-        &.right
-            img.framed-image
-                shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 45% 100%)
-                -webkit-shape-outside polygon(0% 0%, 100% 0%, 55% 100%, 45% 100%)
+            -webkit-shape-outside polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%)
+            shape-outside polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%)
 
 a.framed-text
     h1
@@ -118,7 +116,7 @@ FRAME_MARGIN = 50px
         left 'calc(%s + 25px)' % FRAME_MARGIN
         padding 200px 100px 200px 100px
         margin-left -100px
-        margin-top: 50px
+        margin-top: 100px
 
     > .previous:hover
         opacity 1 !important
@@ -149,38 +147,40 @@ FRAME_MARGIN = 50px
 
         img.spacer
             width 200px
-            height 200px
+            height 305px
             visibility hidden
 
         &.left img.spacer
             float right
-            -webkit-shape-outside polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%)
-            shape-outside polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%)
-            margin-top: 100px
+            shape-outside polygon(100% 0%, 0% 90%, 0 90%, 100% 90%)
+            -webkit-shape-outside polygon(100% 0%, 0% 90%, 0 90%, 100% 90%)
+            // margin-top: 100px
 
         &.right img.spacer
-            -webkit-shape-outside polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%)
-            shape-outside polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%)
+            shape-outside polygon(100% 90%, 0% 90%, 0% 0%, 0% 0%)
+            -webkit-shape-outside polygon(100% 90%, 0% 90%, 0% 0%, 0% 0%)
             float left
 
         &.inverted
             img.spacer
-                shape-outside polygon(100% 0%, 0% 90%, 0 90%, 100% 90%)
-                -webkit-shape-outside polygon(100% 0%, 0% 90%, 0 90%, 100% 90%)
+                -webkit-shape-outside polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%)
+                shape-outside polygon(100% 100%, 100% 100%, 100% 10%, 0% 10%)
 
             &.right
                 img.spacer
-                    shape-outside polygon(90% 100%, 0% 100%, 0% 10%, 0% 10%)
-                    -webkit-shape-outside polygon(90% 100%, 0% 100%, 0% 10%, 0% 10%)
+                    -webkit-shape-outside polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%)
+                    shape-outside polygon(0% 100%, 0% 100%, 100% 10%, 0% 10%)
 
         &.right:nth-of-type(1)
             img.spacer
                 display: none
 
+.links
+    display: flex
+    flex-wrap: wrap
 
+.article
 .linkedPage
-    display inline-block
-    width calc(50% - 40px)
     margin 0 15px 50px 15px
     border 5px solid black
     border-radius 2px
@@ -202,6 +202,10 @@ FRAME_MARGIN = 50px
         color LINK_COLOR
         text-decoration underline
         word-break: break-all;
+
+.linkedPage
+    display inline-block
+    width calc(50% - 40px)
 
 @media TABLET_LANDSCAPE
     .framed-text.left

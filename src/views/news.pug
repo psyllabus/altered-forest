@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    //- Can't get facebook page plugin to resize automatically...
+    //- .embedded-feed
+    //-     iframe.facebook(src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAlteredForest&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media")
+    .embedded-feed
+        a(class="twitter-timeline" data-theme="dark" href="https://twitter.com/AlteredForest?ref_src=twsrc%5Etfw")
+            | Tweets by AlteredForest
+        script(src="https://platform.twitter.com/widgets.js" charset="utf-8")
+
+block scripts
+    //- script(type="text/javascript").
+    //-     var refreshPage = function () {
+    //-         //getting parent box width
+    //-         var bodyWidth = $('body').width();
+    //-         var bodyHeight = $('body').height();
+    //-         var container_width = bodyWidth > 1200
+    //-             ? bodyWidth / 2
+    //-             : bodyWidth > 600
+    //-                 ? 600
+    //-                 : bodyWidth;
+    //-         var container_height = bodyHeight > 1200
+    //-             ? bodyHeight / 2
+    //-             : bodyHeight > 600
+    //-                 ? 600
+    //-                 : bodyHeight;
+    //-         //getting parent box height
+    //-         if (!isNaN(container_width) && !isNaN(container_height)) {
+    //-             $(".fb-page").attr("data-width", container_width).attr("data-height", container_height);
+    //-         }
+    //-         if (typeof FB !== 'undefined' ) {
+    //-             FB.XFBML.parse();
+    //-         }
+    //-     }
+
+    //-     $(window).on('resize', function() {
+    //-         setTimeout(function(){
+    //-             refreshPage();
+    //-         }, 500);
+    //-     });
+
+    //-     $(window).on('load', function() {
+    //-         setTimeout(function(){
+    //-             refreshPage();
+    //-         }, 1500);
+    //-     });
