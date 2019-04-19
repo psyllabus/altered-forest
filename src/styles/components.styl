@@ -114,7 +114,7 @@ FRAME_MARGIN = 50px
         // content "\f0d9"
         slider-controls-style()
         left 'calc(%s + 25px)' % FRAME_MARGIN
-        padding 200px 100px 200px 100px
+        padding 200px 100px 100px 100px
         margin-left -100px
         margin-top: 100px
 
@@ -125,7 +125,7 @@ FRAME_MARGIN = 50px
         // content "\f0da"
         slider-controls-style()
         right 'calc(%s + 25px)' % FRAME_MARGIN
-        padding 200px 100px 200px 100px
+        padding 200px 100px 100px 100px
         margin-right -100px
         margin-top: 100px
 
@@ -152,13 +152,13 @@ FRAME_MARGIN = 50px
 
         &.left img.spacer
             float right
-            shape-outside polygon(100% 0%, 0% 90%, 0 90%, 100% 90%)
-            -webkit-shape-outside polygon(100% 0%, 0% 90%, 0 90%, 100% 90%)
+            shape-outside polygon(100% 30%, 0% 90%, 0 90%, 100% 90%)
+            -webkit-shape-outside polygon(100% 30%, 0% 90%, 0 90%, 100% 90%)
             // margin-top: 100px
 
         &.right img.spacer
-            shape-outside polygon(100% 90%, 0% 90%, 0% 0%, 0% 0%)
-            -webkit-shape-outside polygon(100% 90%, 0% 90%, 0% 0%, 0% 0%)
+            shape-outside polygon(100% 90%, 0% 90%, 0% 0%, 0% 30%)
+            -webkit-shape-outside polygon(100% 90%, 0% 90%, 0% 0%, 0% 30%)
             float left
 
         &.inverted
@@ -214,12 +214,16 @@ FRAME_MARGIN = 50px
     .linkedPage
         width calc(50% - 40px)
 
+
+FRAME_MARGIN_TABLET = 30px
 @media TABLET_PORTRAIT
     .framed-text.left
     .framed-text.right
+        min-width: calc(100vw - 200px)
+        margin 0 FRAME_MARGIN_TABLET
+
         img.framed-image
             height 200px
-        min-width: calc(100vw - 200px)
 
     .framed-text.left
         img.framed-image
@@ -232,9 +236,23 @@ FRAME_MARGIN = 50px
         .text-container
             margin-right 120px
 
+    .sliding-frames
+        > .previous
+            left 'calc(%s + 20px)' % FRAME_MARGIN_TABLET
+
+        > .next
+            right 'calc(%s + 20px)' % FRAME_MARGIN_TABLET !important
+
+    for num in (0..SLIDING_FRAMES_MAX_NB)
+        .sliding-frames.translate-{num}
+            .framed-text
+                transform translateX("calc(%s - %s)" % (num * -100% num * FRAME_MARGIN_TABLET * 2 + 15px)) !important
+
+
 @media PHONE_LANDSCAPE
     .framed-text.left
     .framed-text.right
+        margin 0 30px
         img.framed-image
             height 200px
 
@@ -253,19 +271,17 @@ FRAME_MARGIN = 50px
         width calc(100% - 30px)
 
 
-FRAME_MARGIN_PHONE = 30px
-@media PHONE_PORTRAIT
+@media PHONE_LANDSCAPE
     .sliding-frames
+        .framed-text img.spacer
+            width: 120px
+        .next
+            padding-right: 75px
+        .previous
+            padding-left: 85px
 
-        > .previous
-            left 'calc(%s + 25px)' % FRAME_MARGIN_PHONE
 
-        > .next
-            right 'calc(%s + 25px)' % FRAME_MARGIN_PHONE !important
-
-        .framed-text
-            margin 0 FRAME_MARGIN_PHONE !important
-
+@media PHONE_PORTRAIT
     .framed-text.left
     .framed-text.right
         min-width: calc(100vw - 100px)
@@ -296,11 +312,6 @@ FRAME_MARGIN_PHONE = 30px
             margin-left -20px !important
             margin-right -20px !important
 
-
-    for num in (0..SLIDING_FRAMES_MAX_NB)
-        .sliding-frames.translate-{num}
-            .framed-text
-                transform translateX("calc(%s - %s)" % (num * -100% num * FRAME_MARGIN_PHONE * 2 + 15px)) !important
 
 for num in (1..SLIDING_FRAMES_MAX_NB)
     .sliding-frames.translate-{num}
